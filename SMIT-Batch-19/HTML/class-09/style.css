@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+.paragraph{
+    color: red;
+}
+
+#para{
+    color: blue;
+}
+
+
+span{
+    font-size: 50px;
+}
+
+.form-inputs{
+    display: flex;
+=======
+.paragraph{
+    color: red;
+}
+
+#para{
+    color: blue;
+}
+
+
+span{
+    font-size: 50px;
+}
+
+.form-inputs{
+    display: flex;
+>>>>>>> 97d0d8009109563c2162c5f5f1b23a45b0e86b43
+}

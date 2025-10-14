@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="" method="get" >
+    <fieldset>
+        <legend for="" align="center">Contact form</legend>
+
+        <!-- Text Input -->
+        <p>Enter your name :
+            <input type="text" name="username">
+        </p>
+
+        <!-- Radio Button -->
+        <p>
+            Select gender:
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male">Male
+            </label>
+
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female">Female
+
+            </label>
+        </p>
+
+
+        <!-- Checkbox -->
+        <p>
+            Select your favourite dish
+            <input type="checkbox" name="user favourite dish" value="biryani">Biryani
+            <input type="checkbox" name="user favourite dish" value="bbq">BBQ
+            <input type="checkbox" name="user favourite dish" value="nihari" checked>Nihari
+        </p>
+
+
+        <!-- Dropdown -->
+        <select name="country names" multiple>
+            <option value="" disabled>Select your favourite country</option>
+            <option value="pak">Pakistan</option>
+            <option value="ind" selected>India</option>
+            <option value="dubai">Dubai</option>
+            <option value="eng">England</option>
+        </select>
+
+        <!-- File Upload -->
+        <p>
+            Upload file:
+            <input type="file" name="file upload">
+        </p>
+
+        <!-- Buttons -->
+        <p>
+            Button 01 :
+            <input type="submit" name="button" value="Subscribe button">
+        </p>
+
+        <p>
+            Button 02 :
+            <button>Submit form</button>
+        </p>
+
+        <!-- Image button -->
+        <input type="image" src="image-btn.webp" alt="" width="100">
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="pages">
+
+        
+        <!-- Label tag -->
+        <label for="firstname">
+            First Name :
+            <input type="text" id="firstname">
+        </label>
+
+        <!-- Date  -->
+        <input type="date">
+
+        <!-- Color -->
+        <input type="color">
+
+        <!-- Datetime -->
+        <input type="datetime-local">
+
+        <!-- Range -->
+        <input type="range">
+
+        <!-- Reset button -->
+        <input type="reset">
+        
+        <br><br><br><br>
+    </fieldset>
+    </form>
+</body>
+
+</html>

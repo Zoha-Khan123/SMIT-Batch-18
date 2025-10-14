@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <h1>Table 01 Colspan</h1>
+
+    <!-- 1st Table Colspan -->
+    <table border="1" cellpadding="20" cellspacing="10" width="100%">
+      <tr bgcolor="skyblue">
+        <td></td>
+        <th>9am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12am</th>
+      </tr>
+
+      <tr>
+        <th>Monday</th>
+        <td colspan="2" bgcolor="pink">Goegraphy</td>
+        <td>Math</td>
+        <td>Art</td>
+      </tr>
+
+      <tr>
+        <th>Tuesday</th>
+        <td colspan="3" align>GYM</td>
+        <td>Home Eco</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <!-- 2nd Table Rowspan -->
+    <h1>Table 02 Rowspan</h1>
+    <table border="1" cellpadding="20" cellspacing="10" width="100%">
+      <thead>
+        <tr>
+          <td></td>
+          <th>ABC</th>
+          <th>BBC</th>
+          <th>CCN</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>6-7</th>
+          <td rowspan="2">Movie</td>
+          <td>Comedy</td>
+          <td>News</td>
+        </tr>
+
+        <tr>
+          <th>7-8</th>
+          <td>Sport</td>
+          <td>Current Affairs</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4" align="center"><b>End of Schedule</b></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
