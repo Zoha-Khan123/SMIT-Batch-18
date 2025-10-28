@@ -1,0 +1,20 @@
+.parent{
+    margin: 40px;
+}
+
+.child{
+margin: inherit;
+background-color: rgba(159, 36, 36,0.9);
+/* background-color: hsla(0,80%,30%,0.9); */
+}
+
+.header>h1{
+    color: blue;
+}
+
+.header>p{
+    color: rgb(255, 0, 204);
+}
+.footer>h2{
+    color: blueviolet;
+}

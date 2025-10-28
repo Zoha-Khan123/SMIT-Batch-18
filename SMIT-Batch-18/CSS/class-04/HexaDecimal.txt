@@ -1,0 +1,20 @@
+HexaDecimal (16)
+
+0-9 A-F
+
+102 / 16 = 6 Reminder 6 Quotient
+6 + 6 = 66 RED
+
+
+205 / 16 =  12 Quotient 13 Reminder
+12 + 13 = cd Green
+
+
+170 / 16 = 10 Quotient 10 Reminder
+10 + 10 = aa  Blue
+
+
+
+Red + Green + Blue
+66  + cd + aa 
+Hexcode = #66cdaa

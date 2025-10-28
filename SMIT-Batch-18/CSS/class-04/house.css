@@ -1,0 +1,23 @@
+.house h1{
+    color: blue;
+}
+.bed-room{
+    background-color: lightblue;
+}
+
+#kitchen{
+    color: orange;
+}
+
+.house>div{
+    background-color: lightgray;
+}
+
+.living-room+div{
+    background-color: green;
+}
+
+
+#kitchen~div{
+    background-color: lightpink;
+}
