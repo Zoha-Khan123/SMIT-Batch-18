@@ -1,0 +1,51 @@
+/* Universal Selector */
+/* *{
+    color: brown;
+} */
+
+/* Type Selector */
+h1,
+h4 {
+  color: blue;
+}
+
+/* Class Selector */
+.para-two {
+  background-color: coral;
+}
+
+/* ID Selector */
+#css-form {
+  color: crimson;
+}
+
+/* Child Selector */
+ol > li {
+  background-color: chocolate;
+}
+
+/* Class Selector */
+.ol-color-change {
+  color: blue;
+  background-color: darkgoldenrod;
+}
+
+/* Child Selector */
+ol > li > a {
+  color: rgb(255, 0, 0);
+}
+
+/* Descendant Selector */
+ol a {
+  color: blueviolet;
+}
+
+/* Adjacent Sibling Selector */
+/* h4+a+p{
+    background-color: darkred;
+} */
+
+/* General Sibling Selector */
+h4 ~ p {
+  background-color: purple;
+}
