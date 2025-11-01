@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+@font-face {
+    font-family: "Roboto Italic" ;
+    src: url(fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "MomoSig Regular" ;
+    src: url(fonts/MomoSignature-Regular.ttf);
+}
+.institute-name{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: "MomoSig Regular";
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px rgb(120, 120, 120);
+}
+
+.css-fifth-class{
+/* font-family: "Roboto Italic"; */
+  font-family: "Bitcount Grid Single", system-ui;
+  /* font-weight: 900; */
+  font-style: italic;
+}
+
+.para:first-line{
+    color: blueviolet;
+    /* text-transform: capitalize;
+    text-decoration:line-through;
+    line-height: 30px; */
+    /* letter-spacing: 20px; */
+    /* word-spacing: 20px; */
+    /* text-align: justify; */
+    text-indent: 20px;
+}
+
+a{
+    text-decoration: none;
+}
