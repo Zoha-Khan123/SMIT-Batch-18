@@ -4,7 +4,7 @@ In this assignment, you are required to create a table structure using HTML and 
 
 Each box must use a different color format — **HEX**, **RGB**, or **HSL** — as specified in the instructions below.
 
-![Color Palette](color-palette.png)
+![Color Palette](color-palette.jpg)
 
 ---
 
