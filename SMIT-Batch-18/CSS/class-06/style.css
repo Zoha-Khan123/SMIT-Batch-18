@@ -1,0 +1,71 @@
+/* ==================== Style Links ====================== */
+/* a:link{
+    color: red;
+}
+
+a:visited{
+    color: green;
+}
+
+
+a:active{
+    color: yellow;
+}
+
+a:hover{
+    color: blueviolet;
+} */
+
+
+/* 
+button:hover{
+    background-color:gray ;
+}
+
+input:focus{
+    background-color: chocolate;
+} */
+
+
+
+
+/* ====================== Attribute Selectors =================== */
+
+/* p[class]{
+    background-color: aqua;
+}
+
+p[class="dog"]{
+    background-color: blue;
+}
+
+p[class~="cat"]{
+    background-color:brown;
+}
+
+p[id^="l"]{
+color: darkmagenta;
+}
+
+p[class*="go"]{
+    background-color: deeppink;
+}
+
+p[id$="n"]{
+    font-size: 30px;
+} */
+
+
+
+/* ========================== BOX Dimension ================= */
+.card-01 {
+    background-color: chocolate;
+    width: 200px;
+    height: 200px;
+}
+
+.card-02 {
+    background-color: rgb(30, 210, 30);
+    width: 200px;
+    height: 200px;
+}
