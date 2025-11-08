@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============ width and height example =============== */
+/* .box-01{
+    background-color: chartreuse;
+    width:400px;
+    height: 400px;
+}
+
+.child{
+    background-color: blueviolet;
+    width: 50%;
+    height: 50%;
+} */
+
+/* ============ min width and max width exmaple ===========*/
+/* .car{
+    min-width: 300px;
+    max-width: 1200px;
+}
+
+.car>img{
+    width: 100%;
+} */
+
+/* =========== min height and max height =================*/
+/* .content{
+    background-color: chocolate;
+    width:400px;
+    min-height:100px;
+    max-height:150px;
+    overflow: hidden;
+    overflow: scroll;
+} */
+
+/* ======== border, padding , margin , inline-block , box-shadow and border-radius ========== */
+.content-2 {
+  background-color: rgb(248, 248, 248);
+  width: 200px;
+  border: 2px solid purple;
+  padding: 10px 50px 30px 10px;
+  /* margin: 0px 0px 10px 0px; */
+  margin-bottom: 20px;
+  margin: auto;
+  display: inline-block;
+  box-shadow: rgba(207, 41, 41, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+  /* visibility: hidden; */
+}
