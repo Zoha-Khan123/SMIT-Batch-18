@@ -1,0 +1,80 @@
+/* ======== List ============ */
+ul {
+  list-style: inside square;
+}
+
+li::marker {
+  color: red;
+  font-size: 50px;
+}
+
+li {
+  color: purple;
+  font-size: 50px;
+}
+
+/* ========= Table ============ */
+
+table {
+  empty-cells: hide;
+  border-collapse: collapse;
+  border-spacing: 30px;
+}
+
+td {
+  border: 2px solid black;
+  padding: 30px;
+}
+
+/* =========== Form =========== */
+form {
+  background-color: black;
+  color: white;
+  width: 300px;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 65%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ======== Position Relative And Absolute ======= */
+.parent {
+  background-color: white;
+  border: 2px solid black;
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+.child {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  background-color: aqua;
+}
+
+/* ========= Position Fixed ========== */
+.image {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}
+
+.image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
