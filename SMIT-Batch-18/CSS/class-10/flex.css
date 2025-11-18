@@ -1,0 +1,30 @@
+.container {
+  border: 2px solid black;
+  height: 400px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-wrap: wrap-reverse; */
+  gap: 20px;
+  /* column-gap: 20px;
+    row-gap: 20px; */
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+}
+
+.container > div {
+  border: 2px solid red;
+  width: 100px;
+}
+
+.box-01 {
+  order: 1;
+  /* flex-grow: 1; */
+  flex-shrink: 3;
+}
+
+.box-02 {
+  order: 1;
+  flex-basis: 400px;
+}
