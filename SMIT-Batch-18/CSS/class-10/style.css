@@ -4,7 +4,7 @@
 }
 
 main {
-  background-image: url(back-01.avif);
+  background-image: url(images/back-01.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -12,7 +12,7 @@ main {
 }
 
 .about {
-  /* background-image: url(flower.jpeg);
+  /* background-image: url(images/flower.jpeg);
    background-size: contain;
    background-repeat: no-repeat;
    background-position: 50% 50%; */

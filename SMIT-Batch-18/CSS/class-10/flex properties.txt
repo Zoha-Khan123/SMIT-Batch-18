@@ -1,0 +1,32 @@
+=================  Flex Container ======================
+flex
+flex direction : column;
+flex direction:column reverse;
+flex-direction: row reverse;
+flex wrap : wrap;
+flex-wrap:wrap-reverse;
+gap : 20px;
+row-gap: 20px;
+column-gap: 20px;
+flex-flow: wrap column;        ---> ya direction or wrap dono ka shorthand ha 
+justify-content: center;
+justify-content: flex-start;
+align-items:stretch;              ---> by default hota ha 
+align-items:center;
+align-items:flex-start;
+align-content:center;
+
+
+
+
+
+
+======================= Flex Children ===================
+order:1;               by default order = 0
+flex-grow:1;           by default 0
+flex-shrink:2;         by default 1
+flex-basis:200px;      box ke width kitne ho
+
+
+
+
