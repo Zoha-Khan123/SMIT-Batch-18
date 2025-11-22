@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    max-width: 800px;
+    height: 100vh;
+    margin: auto;
+}
+
+.header{
+    background-color: green;
+    height: 100px;
+}
+
+.navbar{
+    background-color: red;
+    height: 80px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.hero-section{
+    background-color: rgb(36, 177, 36);
+    height: 350px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.text{
+    width: 50%;
+    background-color: gray;
+    height: 250px;
+}
+
+.image{
+    width: 50%;
+    background-color: gray;
+    height: 250px;
+}
+
+.section-2{
+    background-color: yellow;
+    height:300px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.box-1{
+    width: 50%;
+    background-color: gray;
+}
+
+.right{
+    width: 50%;
+        display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-2{
+    background-color: red;
+    height: 100px;
+}
+
+.right-bottom{
+    display: flex;
+    gap: 20px;
+}
+
+.box-3{
+    width: 50%;
+    background-color: blue;
+    height: 200px;
+}
+
+.sub-bottom{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box-4{
+    height:90px;
+    background-color: pink;
+}
+
+.box-5{
+    height:100px;
+    background-color: gray;
+}

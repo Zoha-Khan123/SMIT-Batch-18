@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 800px;
+    height: 100vh;
+    margin: auto;
+}
+
+.logo{
+    background-color: gray;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.header{
+    background-color: gray;
+    height: 100px;
+    margin-top:20px;
+}
+
+nav{
+    display: flex;
+    margin-top:20px;
+    gap: 10px;
+}
+nav>div{
+    width: 25%;
+    background-color: gray;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.about{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.box-1{
+    width: 50%;
+    background-color: gray;
+   height: 200px;
+}
+
+.right-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-2{
+    background-color: gray;
+    height: 50px;
+}
+
+.box-3{
+    background-color: gray;
+    height: 130px;
+}
+
+.footer{
+    margin-top: 20px;
+    background-color: gray;
+    height: 100px;
+}
