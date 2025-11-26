@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ======== Example 01 Media queries ========= */
+/* 
+body{
+    background-color: red;
+}
+
+@media (max-width:768px){
+  body{
+    background-color: blue;
+}  
+}
+
+
+@media (max-width:600px){
+  body{
+    background-color:yellow;
+}  
+} */
+
+/* ======== Example 02 Media queries ========= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+}
+
+.header {
+  width: 20%;
+  background-color: #0e1529;
+  color: white;
+  height: 100px;
+  text-align: center;
+  align-content: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: #ef3d4d;
+  color: white;
+  height: 100px;
+}
+
+.hero {
+  background-color: #4c86c6;
+  height: 300px;
+  color: white;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  width: 50%;
+  background-color: #24344b;
+  height: 200px;
+  color: white;
+}
+
+.main-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.image {
+  width: 50%;
+  background-color: #c0e5e7;
+  height: 100px;
+}
+
+.extra {
+  width: 50%;
+  background-color: #4dbd97;
+  height: 100px;
+}
+
+.banner {
+  background-color: #fed269;
+  height: 100px;
+}
+
+.tab-menu {
+  display: none;
+}
+
+.tab-banner {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .tab-parent {
+    display: flex;
+  }
+
+  .tab-menu {
+    display: block;
+    width: 20%;
+    background-color: #ef3d4d;
+  }
+
+  main {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .main {
+    width: 100%;
+    height: 150px;
+  }
+
+  .main-right {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .extra {
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .tab-banner {
+    display: block;
+    background-color: #fed269;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-menu {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .main-right {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 200px;
+  }
+}
