@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 1200px;
+    margin: 10px auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(3,150px);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+ 
+}
+
+
+.box{
+    background-color: blueviolet;
+}
+.div1{
+    grid-column: 1/-1;
+}
+
+.div2{
+    grid-row: 2/-1;
+}
+.div3{
+    grid-column: 2/-1;
+
+}
