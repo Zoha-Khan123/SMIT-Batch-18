@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ==== Pseudo Class ============ */
+/* .btn:hover{
+    background-color: red;
+    color: white;
+} */
+
+.btn:link{
+color: orange;
+}
+
+.btn:visited{
+    color: orangered;
+}
+
+.btn:active{
+    background-color: red;
+    border: 1px solid green;
+}
+
+
+/* an + b */
+ul li:nth-child(3n){
+    background-color: red;
+}
+
+/* ========== Pseudo Element ============= */
+h1::first-letter{
+    font-size: 50px;
+    background-color: blue;
+}
+
+p::first-line{
+    background-color: red;
+}
+
+h1::before{
+    content: "#";
+
+}
+
+h1::after{
+    content: "#";
+
+}
+
+label::after{
+content: "*";
+}

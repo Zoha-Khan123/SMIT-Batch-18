@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global Variables */
+/* :root{
+    --secondary : blue;
+    --primary : white;
+}
+
+body{
+    background-color: var(--secondary,black);
+    color : var(--primary)
+} */
+
+
+
+/* Local Variables */
+/* .box{
+    --background : purple;
+    --text-color : white;
+}
+
+h2{
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+p{
+    background-color: var(--background);
+} */
+
+
+:root{
+    --background : #cddae2;
+    --card-background : #e6eaeb;
+}
+
+.dark{
+     --background : #0e0e0e;
+    --card-background : #19111c;
+    --text-color : white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    height: 100vh;
+    
+}
+
+.container > div{
+    background-color: var(--card-background);
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+}
