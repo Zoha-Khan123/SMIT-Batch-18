@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+
+
+.div-2{
+    /* transform: translate(-50px,-50px); */
+    /* transform: rotate(100deg); */
+    /* transform: scale(2,1); */
+    /* transform: skewX(20deg); */
+    /* transform: matrix(1,0,0,2,0,0); */
+    transition: background-color 2s linear 2s,  width 2s ease 2s;
+
+    
+}
+
+.div-2:hover{
+    background-color: blueviolet;
+    width: 200px;
+}
+
+/* button{
+    margin: 20px 0px;
+    border: none;
+    background-color: green;
+    padding: 8px 5px;
+    border-radius: 10px;
+    color: white;
+}
+ */
