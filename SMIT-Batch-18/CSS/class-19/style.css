@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: move;
+  animation-duration: 5s;
+  position: relative;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-timing-function: linear; */
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+@keyframes move {
+  from {
+    background-color: yellow;
+  }
+  to {
+    left: 200px;
+    background-color: blue;
+  }
+}
+/* @keyframes move{
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: green;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        background-color: chocolate;
+    }
+    75%{
+        background-color: crimson;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: deepskyblue;
+    }
+} */

@@ -1,0 +1,92 @@
+/* ========== Example 01 ========== */
+/* .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    animation: loader 2s  infinite ease alternate;
+}
+
+.loader>div{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.loader>div:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.loader>div:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.loader>div:nth-child(4){
+    animation-delay: 0.3s;
+}
+@keyframes loader{
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+} */
+
+/* ========= Example 02 ========== */
+
+/* div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left: 1px solid black;
+    animation: loader 2s infinite;
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+/* ========= Example 03 ========= */
+div {
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.bar {
+  animation: load-bar 2s infinite;
+  height: 100%;
+  border: none;
+}
+
+@keyframes load-bar {
+  0% {
+    width: 10%;
+    background-color: red;
+  }
+  25% {
+    width: 20%;
+    background-color: red;
+  }
+  50% {
+    width: 50%;
+    background-color: red;
+  }
+  75% {
+    width: 70%;
+    background-color: red;
+  }
+  100% {
+    width: 100%;
+    background-color: red;
+  }
+}
