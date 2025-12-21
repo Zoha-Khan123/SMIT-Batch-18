@@ -10,16 +10,16 @@ First, revise and practice the layouts created in class. After that, create a ne
 This layout was created in class using CSS Grid.  
 The purpose of this layout is to understand grid-based structure and responsive behavior.
 
-### Screenshots
-
-### Layout Preview
-
-<img src="./homework-images/shoes.png" alt="Desktop" style="width:49%; display:inline-block;"/> <img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:49%; display:inline-block;"/>
-
 
 ### Live URL
 
 [Live Site](https://smit-grid-template-1.netlify.app)
+
+### Layout Preview
+
+<img src="./homework-images/shoes.png" alt="Desktop" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/> 
+<img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/>
+
 
 ---
 
@@ -27,13 +27,15 @@ The purpose of this layout is to understand grid-based structure and responsive 
 
 This blog layout was built using CSS Grid to understand content alignment, layout structure, and responsiveness.
 
-### Screenshots
-
-![DESKTOP](./homework-images/blog.png) ![MOBILE](./homework-images/responsive-blog.png)
-
 ### Live URL
 
 [Live Site](https://smit-blog-grid-2.netlify.app)
+
+### Layout Preview
+
+<img src="./homework-images/blog.png" alt="Desktop" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/> 
+<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/>
+
 
 ---
 
