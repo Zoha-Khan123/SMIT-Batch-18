@@ -10,14 +10,14 @@ First, revise and practice the layouts created in class. After that, create a ne
 This layout was created in class using CSS Grid.  
 The purpose of this layout is to understand grid-based structure and responsive behavior.
 
-<div style="display: flex; align-items: stretch; gap: 10px;">
+<div style="display: flex; gap: 10px;">
 
 <div style="width:70%;">
 **Desktop View**<br>
 <img src="./homework-images/shoes.png" alt="Desktop" style="width:100%; height:300px; object-fit:cover;"/>
 </div>
 
-<div style="width:30%;">
+<div style="width:28%;">
 **Mobile View**<br>
 <img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:100%; height:300px; object-fit:cover;"/>
 </div>
