@@ -10,18 +10,11 @@ First, revise and practice the layouts created in class. After that, create a ne
 This layout was created in class using CSS Grid.  
 The purpose of this layout is to understand grid-based structure and responsive behavior.
 
+### Preview
+
 <div style="display: flex; gap: 10px;">
-
-<div style="width:70%;">
-**Desktop View**<br>
-<img src="./homework-images/shoes.png" alt="Desktop" style="width:100%; height:300px; object-fit:cover;"/>
-</div>
-
-<div style="width:28%;">
-**Mobile View**<br>
-<img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:100%; height:300px; object-fit:cover;"/>
-</div>
-
+<img src="./homework-images/blog.png" alt="Mobile" style="width:70%; height:500px; object-fit:cover;"/>
+<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:28%; height:500px;"/>
 </div>
 
 ### Live URL
@@ -34,17 +27,12 @@ The purpose of this layout is to understand grid-based structure and responsive 
 
 This blog layout was built using CSS Grid to understand content alignment, layout structure, and responsiveness.
 
-**Desktop View**
+### Preview
 
 <div style="display: flex; gap: 10px;">
-<img src="./homework-images/blog.png" alt="Mobile" style="width:70%; height:600px; "/>
-<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:28%; height:600px;"/>
+<img src="./homework-images/blog.png" alt="Mobile" style="width:70%; height:500px; object-fit:cover;"/>
+<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:28%; height:500px;"/>
 </div>
-
-
-**Mobile View**
-
-![Mobile](./homework-images/responsive-blog.png)
 
 ### Live URL
 
