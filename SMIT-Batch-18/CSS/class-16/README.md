@@ -10,16 +10,17 @@ First, revise and practice the layouts created in class. After that, create a ne
 This layout was created in class using CSS Grid.  
 The purpose of this layout is to understand grid-based structure and responsive behavior.
 
+**Desktop View**
+
+![Desktop](./homework-images/shoes.png)
+
+**Mobile View**
+
+![Mobile](./homework-images/responsive-shoes.png)
 
 ### Live URL
 
 [Live Site](https://smit-grid-template-1.netlify.app)
-
-### Layout Preview
-
-<img src="./homework-images/shoes.png" alt="Desktop" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/> 
-<img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/>
-
 
 ---
 
@@ -27,15 +28,17 @@ The purpose of this layout is to understand grid-based structure and responsive 
 
 This blog layout was built using CSS Grid to understand content alignment, layout structure, and responsiveness.
 
+**Desktop View**
+
+![Desktop](./homework-images/blog.png)
+
+**Mobile View**
+
+![Mobile](./homework-images/responsive-blog.png)
+
 ### Live URL
 
 [Live Site](https://smit-blog-grid-2.netlify.app)
-
-### Layout Preview
-
-<img src="./homework-images/blog.png" alt="Desktop" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/> 
-<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:49%; height:300px; object-fit:cover; display:inline-block;"/>
-
 
 ---
 
@@ -65,6 +68,7 @@ Once all layouts are ready, push your work to **GitHub** and deploy it on **Netl
 
 At the time of submission, provide the following links:
 
-- GitHub repository containing your layouts: [GitHub URL](PASTE_GITHUB_URL_HERE)
-- Netlify live site with your deployed layouts: [Netlify URL](PASTE_NETLIFY_URL_HERE)
+- GitHub repository containing your layouts: **GitHub URL**  
+- Netlify live site with your deployed layouts: **Netlify URL**
+
 
