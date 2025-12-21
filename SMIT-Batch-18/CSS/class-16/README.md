@@ -10,17 +10,23 @@ First, revise and practice the layouts created in class. After that, create a ne
 This layout was created in class using CSS Grid.  
 The purpose of this layout is to understand grid-based structure and responsive behavior.
 
-**Desktop View**
+<div style="display: flex; align-items: stretch; gap: 10px;">
 
-![Desktop](./homework-images/shoes.png)
+<div style="width:70%;">
+**Desktop View**<br>
+<img src="./homework-images/shoes.png" alt="Desktop" style="width:100%; height:300px; object-fit:cover;"/>
+</div>
 
-**Mobile View**
+<div style="width:30%;">
+**Mobile View**<br>
+<img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:100%; height:300px; object-fit:cover;"/>
+</div>
 
-![Mobile](./homework-images/responsive-shoes.png)
+</div>
 
 ### Live URL
 
-[Live Site](https://smit-grid-template-1.netlify.app)
+<p>https://smit-grid-template-1.netlify.app</p>
 
 ---
 
@@ -38,7 +44,7 @@ This blog layout was built using CSS Grid to understand content alignment, layou
 
 ### Live URL
 
-[Live Site](https://smit-blog-grid-2.netlify.app)
+<p>https://smit-blog-grid-2.netlify.app/</p>
 
 ---
 
