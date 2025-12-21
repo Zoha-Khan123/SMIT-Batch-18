@@ -13,8 +13,8 @@ The purpose of this layout is to understand grid-based structure and responsive 
 ### Preview
 
 <div style="display: flex; gap: 10px;">
-<img src="./homework-images/blog.png" alt="Mobile" style="width:70%; height:500px; object-fit:cover;"/>
-<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:28%; height:500px;"/>
+<img src="./homework-images/shoes.png" alt="Mobile" style="width:70%; height:500px; object-fit:cover;"/>
+<img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:28%; height:500px;"/>
 </div>
 
 ### Live URL
