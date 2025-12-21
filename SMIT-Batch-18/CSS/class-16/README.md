@@ -37,8 +37,8 @@ This blog layout was built using CSS Grid to understand content alignment, layou
 **Desktop View**
 
 <div style="display: flex; gap: 10px;">
-<img src="./homework-images/blog.png" alt="Mobile" style="width:70%; height:300px; object-fit:cover;"/>
-<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:28%; height:300px; object-fit:cover;"/>
+<img src="./homework-images/blog.png" alt="Mobile" style="width:70%; height:600px; "/>
+<img src="./homework-images/responsive-blog.png" alt="Mobile" style="width:28%; height:600px;"/>
 </div>
 
 
