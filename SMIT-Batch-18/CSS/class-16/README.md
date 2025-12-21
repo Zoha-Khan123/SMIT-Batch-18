@@ -12,7 +12,10 @@ The purpose of this layout is to understand grid-based structure and responsive 
 
 ### Screenshots
 
-![DESKTOP](./homework-images/shoes.png) ![MOBILE](./homework-images/responsive-shoes.png)
+### Layout Preview
+
+<img src="./homework-images/shoes.png" alt="Desktop" style="width:49%; display:inline-block;"/> <img src="./homework-images/responsive-shoes.png" alt="Mobile" style="width:49%; display:inline-block;"/>
+
 
 ### Live URL
 
