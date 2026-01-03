@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+ul > li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  height: 82px;
+  padding: 0px 10px;
+}
+
+nav > h1 {
+  color: #d64d00;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-items,
+.menu-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.checkbox,
+.menu-icon {
+  display: none;
+}
+.menu-items > li:hover,
+.menu-icons > li:hover {
+  cursor: pointer;
+  color: #d64d00;
+}
+
+@media (max-width: 850px) {
+  nav > h1 {
+    font-size: 25px;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgb(196, 195, 195);
+  }
+  .menu-items > li {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .menu-icons {
+    gap: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #toggle-btn:checked + .menu-items {
+    display: block;
+  }
+}
