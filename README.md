@@ -21,12 +21,25 @@ For beginners, the best book to start with is:
 
 ---
 
+## 📖 JavaScript Book (Recommended)
+After HTML & CSS, it’s best to start learning JavaScript with a beginner-friendly book:
+
+📥 [Download Book (Google Drive Link)](https://drive.google.com/file/d/1X5x4RIks7nPkwu0knU1dYFevkeNE52vK/view?usp=sharing)
+
+---
+
+## 🌟 Why This Book?
+- Simple explanations for beginners  
+- Covers **JavaScript fundamentals** including variables, functions, loops, and DOM  
+- Includes practical examples to practice coding  
+
+---
+
 ## 📝 HTML Quiz
 Test your HTML knowledge with this quiz:  
 
 📌 [Take the HTML Quiz](https://forms.gle/UQGinkNagWW5wKkk7)
 
 ---
-
 
 > I will keep updating this repository with more useful resources and notes. Stay connected! 😊
