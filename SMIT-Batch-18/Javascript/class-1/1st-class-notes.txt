@@ -1,0 +1,103 @@
+What is Javascript? 
+JavaScript is a high-level scripting language originally interpreted by browsers, but modern JavaScript uses Just-In-Time (JIT) compilation and is now a full-fledged programming language used for both frontend and backend development.
+
+High-Level Language
+High-level language wo language hoti hai jo human-friendly hoti hai aur machine language se door hoti hai.
+Example : Javascript , Python etc
+
+Low-Level Language
+Low-level language wo programming language hoti hai jo machine ke bohat qareeb hoti hai aur insaan ke liye samajhna mushkil hota hai.
+Example : Machine Language → 10110010 11001100
+	  Assembly → MOV AX, 5 
+
+
+Problem: High-Level → Low-Level
+Agar computer sirf low-level language samajhta hai aur hum high-level language use kar rahe hain, to ye computer ko kaise samajh aayegi?
+
+Solution: Translator
+Translator high-level code ko machine ke liye samajhne layak bana deta hai.
+
+Translator do tarah ke hote hain:
+1️-Compiler → Code ko pehle complete compile karke executable file banata hai
+2️-Interpreter → Code ko line by line read aur execute karta hai
+
+Modern Translator
+Just-In-Time (JIT) ek technique hai jisme program run hotay waqt jo code baar-baar execute hota hai usay machine language me compile kar liya jata hai, phir wahi compiled code dobara use hota hai, jis se program ki speed aur performance improve ho jati hai.
+
+Programming Language vs Scripting Language
+
+Programming Language
+	Programming language wo language hai jo apna environment create kar sakti hai 	aur complex programs aur software likhne ke liye use hoti hai.
+For Example :
+	Programming language engineer ki tarah hai jo apni machine design karta hai.
+
+Scripting Languagae
+	Scripting language wo language hai jo already exist kar rahe environment (browser, server) me run hoti hai.
+For Example:
+	Scripting language technician ki tarah hai jo already banay huye machine ke upar kaam karta hai.
+
+
+
+
+
+JavaScript History 
+
+1️ Creation of JavaScript (1995)
+JavaScript 1995 me Brendan Eich ne sirf 10 din me Netscape ke liye banayi. Pehle iska naam Mocha tha, phir LiveScript, aur finally JavaScript. Is language ka purpose tha web pages ko interactive aur dynamic banana, kyunki pehle HTML aur CSS sirf static content create karte the.
+
+2️- Browser Behavior Issues (1995–1996)
+Jab JavaScript launch hui, to ye har browser me alag behave karti thi, jisse developers ko har browser ke liye alag code likhna parta tha. Ye process bohot mushkil aur time-consuming tha. Is wajah se industry ne socha ke iska ek common standard hona chahiye, jo sab browsers me consistent behavior provide kare.
+
+3️- Standardization – ECMAScript (1997)
+Industry ne decide kiya ke JavaScript ka standard banaya jaye. ECMA International, jo ek neutral aur trusted organization hai, ne 1997 me ECMAScript standard banaya. Is standard ka purpose tha ke sab browsers JavaScript ka same behavior follow karein, aur developers ko alag code likhne ki zarurat na ho.
+
+4️- Early ECMAScript Versions
+Pehle ECMAScript versions numbers se abbreviated the:
+ES1, ES2, ES3, ES5, ES6
+2016 ke baad ECMAScript versions year ke naam se release hone lage:
+ECMAScript 2016, 2017, 2018 … aur aaj ECMAScript 2025 tak aa gaya hai.
+
+5️- Node.js and Full-Stack Use (2009)
+2009 me Node.js ka introduction hua, jiski wajah se JavaScript server-side bhi run hone lagi. Is tarah JavaScript frontend aur backend dono me use hone lagi, aur ek full-stack language ban gayi. Ye step web development me ek revolution tha, kyunki ab developers single language se complete applications build kar sakte the.
+
+6️- Modern JavaScript – ES6 / ECMAScript 2015
+2015 me ES6 release hua, jise Modern JavaScript kaha jata hai. ES6 ne naye features diye, jaise: let & const, arrow functions, classes, modules, template literals, promises, aur destructuring. Ye features code ko clean, maintainable aur powerful banate hain aur modern web apps aur frameworks me widely use hote hain.
+
+7️- Present Day
+Aaj bhi ECMA har saal naye ECMAScript versions release karta hai, jaise ES2016 → … → ES2025, jisse JavaScript aur zyada modern aur versatile hoti ja rahi hai. JavaScript ab frontend, backend, mobile aur desktop applications ke liye use hoti hai, aur full-stack development me primary language ban gayi hai.
+
+
+
+
+
+
+
+
+
+===================================================================
+window.alert
+
+JavaScript browser ke andar run hoti hai, aur browser JavaScript ko ek global object provide karta hai jiska naam window hota hai.
+Jab hum likhte hain:
+window.alert("Hello");
+to iska matlab hota hai:
+👉 window object ke andar jo alert method hai, usay call karo
+Simple samajhne ke liye:
+window → browser ka main (global) object
+alert → window object ka ek function / method
+
+
+
+Variables – Definition (Roman Urdu)
+1-variable aik container hota ha jis ma hum apne values ko store kartay han 
+var name = "Zoha"
+var mtlab container
+name mtlab container ka name rakha
+"Zoha" mtlab variable ka ander value store karde
+= ka mtlab ka right side wale value left ma daal do 
+
+2- declaration / assignment
+3- variable name relevant hona cahiya
+4- varriable update ho sakta ha 
+
+
