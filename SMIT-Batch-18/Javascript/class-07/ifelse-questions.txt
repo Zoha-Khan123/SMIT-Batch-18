@@ -1,0 +1,72 @@
+//=============== Practice Questions ===============
+
+
+Question: Battery Status Checker
+User apni device ki battery percentage enter karega.
+Aap ko conditions lagani hain:
+Agar battery percentage 80 se zyada ho
+→ Message show ho: Battery Full
+Agar battery percentage 30 se zyada ho 
+→ Message show ho: Battery Medium
+Agar battery percentage 30 se kam ho
+→ Message show ho: Low Battery! Please Charge
+
+
+Question 2 – Marks Position
+
+User marks enter kare.
+Agar marks 90 se zyada ho → Excellent
+Agar marks 70 se zyada ho → Good
+Agar marks 50 se zyada ho → Average
+Warna → Fail
+
+
+
+
+Question 3 – Simple Password Check
+User password enter kare.
+Conditions lagao:
+Agar password "admin123" ho → Access Granted
+Agar password "guest123" ho → Limited Access
+Warna → Wrong Password
+
+
+And (&&)
+Scenario:
+School me students ke marks aur attendance ke basis par decide hota hai ki student Pass hoga ya Fail.
+Rules:
+Marks 40 ya us se zyada honi chahiye
+Attendance 75% ya us se zyada honi chahiye
+Dono conditions true honi chahiye tabhi student Pass hoga
+Agar koi bhi condition false ho → Fail
+
+
+
+OR (||) – Koi bhi ek condition sahi ho to chalega
+Situation 1 – Weekend School
+Agar aaj Saturday hai ya Sunday hai
+→ School band hai
+Agar weekday hai
+→ School khula hai
+
+
+Example 3 – Free Delivery
+Agar order amount 500 ya us se zyada hai ya customer VIP member hai
+→ Free delivery milegi
+Agar dono condition false hai
+→ Delivery charge lagega
+
+
+NOT (!) – Condition ka opposite
+Situation 1 – Rain Check
+Agar barish nahi ho rahi hai (!isRaining)
+→ Bahar jao
+Agar barish ho rahi hai
+→ Ghar me raho
+
+
+Situation 2 – Permission Denied
+Agar permission nahi hai (!hasPermission)
+→ Access Denied
+Agar permission hai
+→ Access Granted
