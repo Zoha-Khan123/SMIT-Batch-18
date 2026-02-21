@@ -1,4 +1,4 @@
-# JavaScript Assignment — Math & User Interaction (Chapters 14 to 17)
+# JavaScript Assignment — Math & User Interaction (Chapters 6 to 9)
 
 You are assigned work from the following JavaScript chapters. This assignment includes all the concepts that have already been covered in class so that you can practice them and improve your understanding.
 
