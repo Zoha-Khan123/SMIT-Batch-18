@@ -13,7 +13,7 @@ You are required to practice all of the above topics using JavaScript.
 
 ## 📂 Assignment Files:
 All assignment files are available at the following link:  
-👉 https://github.com/Zoha-Khan123/SMIT-Batch-18/tree/master/SMIT-Batch-18/Javascript/class-1/assignment(1-5)
+👉 https://github.com/Zoha-Khan123/SMIT-Batch-18/tree/master/SMIT-Batch-18/Javascript/class-01/assignment(1-5)
 
 ## ✅ Instructions:
 - Complete your work in a `script.js` file.  
