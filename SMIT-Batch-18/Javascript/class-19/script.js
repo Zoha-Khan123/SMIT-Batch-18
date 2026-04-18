@@ -1,47 +1,64 @@
-// var rounds = Number(prompt("How many rounds do you want to play the game"))
-
-// var palyer1Score = 0;  
-// var palyer2Score = 0; 
-
-// for(var i = 1; i <= rounds; i++){
-    
-//     console.log("Round " + i);
-    
-//     var player1Roll = Math.floor((Math.random() * 6) + 1)
-//     console.log("Player 1 Roll " + player1Roll);  5
-    
-//     var player2Roll = Math.floor((Math.random() * 6) + 1)
-//     console.log("Player 2 Roll " + player2Roll);  5
-
-//     if(player1Roll > player2Roll){
-//         palyer1Score++
-//     }else if(player2Roll > player1Roll){
-//         palyer2Score++
-//     }else{
-//         console.log("Draw");
-        
-//     }
-    
-//     console.log("=======================");
-    
-// }
-
-// console.log("====== x ======== Result ====== x ========");
-
-// console.log("Player 1 score :" + palyer1Score);
-// console.log("Player 2 score :" + palyer2Score);
+//  ============ Date object ==============
+// var rightNow = new Date()
+// console.log(typeof rightNow);
+// console.log(rightNow.getDate());
+// console.log(rightNow.getTime());
 
 
-// if(palyer1Score > palyer2Score){
-//     console.log("Player 1 won the match");
-    
-// }else if(palyer2Score > palyer1Score){
-//     console.log("Player 2 won the match");
-    
-// }else{
-//     console.log("Match draw");
-    
-// }
+// ========== current date ke hisaab se day ka name array se get karna ===============
+// var dayNames = ["Sunday", "Monday", "منگل", "Wed", "Thu", "Fri", "Sat"];
+// var day = dayNames[rightNow.getDay()]
+// console.log(day);
 
 
 
+// ========  1 January 1970 se le kar ab tak ka current time milliseconds me return karta hai =====
+// var now = Date.now()
+// console.log(now);
+
+
+
+// ======== convert date in string and apply string methods  =========
+// var rightNowStr = rightNow.toString()
+// console.log(typeof rightNowStr);
+// console.log(rightNowStr);
+// console.log(rightNowStr.slice(0,4));
+// console.log(rightNowStr.charAt(0));
+
+
+
+
+
+setInterval(() => {
+// ======== specifying a date and time
+var today = new Date()
+var ramzanDate = new Date("Feb 07, 2027")
+var todayMs = today.getTime()
+var ramzanMs = ramzanDate.getTime()
+var diff = ramzanMs - todayMs
+
+
+// ====== calculation of milliseconds =======
+var oneSecond = 1000
+var oneMin = oneSecond * 60
+var oneHour = oneMin * 60
+var oneDay = oneHour * 24
+var oneMonth = oneDay * 30
+
+
+var days = Math.floor(diff / oneDay)
+var remainingMsAfterDays = diff % oneDay
+
+var hours = Math.floor(remainingMsAfterDays / oneHour)
+var remainingMsAfterHours = remainingMsAfterDays % oneHour
+
+
+var minutes = Math.floor(remainingMsAfterHours / oneMin)
+var remainigMsAfterMinutes = remainingMsAfterHours % oneMin
+
+var seconds = Math.floor(remainigMsAfterMinutes / oneSecond)
+
+console.clear()
+console.log(days + " Days " + hours + " Hours " + minutes +  " Minutes " + seconds + " Seconds ");
+
+}, 1000);

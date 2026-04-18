@@ -1,42 +1,47 @@
-// var month = prompt("Enter month name")
-// if(month.length > 3){
-//     console.log(month.slice(0,3)); 
-// }
+// var rounds = Number(prompt("How many rounds do you want to play the game"))
 
-// ============ word found ============
-// var text = "Javascript programming is a programming programming programming language"
-// var count = 0
-// for(var i = 0; i < text.length; i++){
-//     if(text.slice(i,i+11)==="programming"){
-//         console.log("programming found");
-//         count++
+// var palyer1Score = 0;  
+// var palyer2Score = 0; 
+
+// for(var i = 1; i <= rounds; i++){
+    
+//     console.log("Round " + i);
+    
+//     var player1Roll = Math.floor((Math.random() * 6) + 1)
+//     console.log("Player 1 Roll " + player1Roll);  5
+    
+//     var player2Roll = Math.floor((Math.random() * 6) + 1)
+//     console.log("Player 2 Roll " + player2Roll);  5
+
+//     if(player1Roll > player2Roll){
+//         palyer1Score++
+//     }else if(player2Roll > player1Roll){
+//         palyer2Score++
+//     }else{
+//         console.log("Draw");
         
 //     }
-// }
-// console.log(count);
-
-
-// ============ word replace ===================
-// var text = "Javascript is a programming language"
-// for(var i = 0; i < text.length; i++){
-//     if(text.slice(i,i+10)==="Javascript"){
-//         console.log("Python" + text.slice(i+10));
-        
-//     }
+    
+//     console.log("=======================");
+    
 // }
 
+// console.log("====== x ======== Result ====== x ========");
 
-// var text = "Javascript is a programming language programming"
-// for(var i = 0; i < text.length; i++){
-//     if(text.slice(i,i+11)==="programming"){
-//         text = text.slice(0,i)+ "frontend" + text.slice(i+11);
-        
-//     }
+// console.log("Player 1 score :" + palyer1Score);
+// console.log("Player 2 score :" + palyer2Score);
+
+
+// if(palyer1Score > palyer2Score){
+//     console.log("Player 1 won the match");
+    
+// }else if(palyer2Score > palyer1Score){
+//     console.log("Player 2 won the match");
+    
+// }else{
+//     console.log("Match draw");
+    
 // }
-// console.log(text);
 
-// ============ word replace with different methods ================
-// var text = "Javascript is a programming language programming"
-// console.log(text.replace("programming","frontend"));
-// console.log(text.replace(/programming/g,"frontend"));
-// console.log(text.replaceAll("programming","frontend"));
+
+
