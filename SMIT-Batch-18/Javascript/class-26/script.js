@@ -18,7 +18,7 @@
 //     email: "johndoe@gmail.com",
 //     isEnrolled: true,
 //     age: 20,
-//     greeting: function greet() {
+//     greeting: function () {
 //         return "Hello world";
 //     }
 // };
@@ -45,7 +45,7 @@
 // student.skill = ["HTML", "CSS", "JAVASCRIPT"];
 // console.log(student.skill[1]);
 
-// student.sayBye = function bye() {
+// student.sayBye = function () {
 //     return "Bye";
 // };
 
@@ -54,7 +54,7 @@
 
 // student.isEnrolled = false;
 
-// student.sayBye = function bye() {
+// student.sayBye = function () {
 //     return "Bye byeeeeeeeeeeee";
 // };
 
@@ -86,8 +86,8 @@
 // ===== for...in Loop =====
 // Used to loop through all keys of an object.
 
-// for (var a in student) {
-//     console.log(a, student[a]);
+// for (var key in student) {
+//     console.log(key, student[key]);
 // }
 
 
@@ -111,10 +111,7 @@
 // ===== Object Destructuring =====
 // Extract object properties into variables.
 
-// var {
-//     email: userEmail,
-//     isEnrolled: userIsEnrolled
-// } = student;
+// var { email: userEmail, isEnrolled: userIsEnrolled } = student;
 
 // console.log(userEmail);
 // console.log(userIsEnrolled);
