@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="toggleModal('block')">Add</button>
+
+    <div id="modal">
+      <div class="modal_header">
+        <h1>Add Todo</h1>
+        <button onclick="toggleModal('none')">X</button>
+      </div>
+
+      <form action="" id="form" onsubmit="submitTodo(event)">
+        <label for="">
+          Task:
+          <input type="text" id="task" placeholder="Enter your todo" />
+        </label>
+
+        <label for="">
+          Select Status
+          <select id="task_status">
+            <option value="" disabled selected>Select Todo Status</option>
+
+            <option value="completed">completed</option>
+            <option value="pending">pending</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+
+    <div class="show_todos">
+      <div class="todo_list">
+        <h1>Biyani</h1>
+        <p>Completed</p>
+
+        <div class="btn_action">
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

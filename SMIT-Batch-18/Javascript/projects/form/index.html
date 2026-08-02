@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="formSubmit(event)">
+        <label for="">
+            Name:
+            <input type="text" name="" id="user_name">
+        </label><br>
+
+        <label for="">
+            Email:
+            <input type="email" name="" id="user_email">
+        </label><br>
+
+        <label for="">
+            Gender
+            <input type="radio" name="gender" id="" value="male">Male
+            <input type="radio" name="gender" id="" value="female">Female
+        </label><br>
+
+
+        <label for="">
+            Skills:
+            <input type="checkbox" name="skills" id="" value="html">HTML
+            <input type="checkbox" name="skills" id="" value="css">Css
+            <input type="checkbox" name="skills" id="" value="java">Javascript
+        </label><br>
+
+        <label for="">
+            Citiy:
+           <select id="city">
+            <option value="" disabled selected>Select city</option>
+            <option value="karachi">Karachi</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="quetta">Quetta</option>
+           </select>
+        </label><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <table border="1px solid black">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Skills</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table_body"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
