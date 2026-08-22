@@ -1,14 +1,25 @@
 # 📘 JavaScript Modules — `import` & `export`
 
+## 📚 Topics Covered
+
+1. **JavaScript Modules**
+2. **`export` and Named Exports**
+3. **Named Imports and Renaming with `as`**
+4. **Default Exports and Imports**
+5. **Multiple Exports and `import * as`**
+6. **ES Modules and `"type": "module"`**
+7. **Module File Paths**
+8. **Practical Node.js Module Project**
+
 In this lecture, we will learn how to divide JavaScript code into multiple files and share code between those files.
 
 Modules are important because modern JavaScript projects, including Firebase projects, usually contain many files.
 
-## 1. 🚀 Introduction
+# 1. 🚀 Introduction
 
 JavaScript projects become easier to manage when related code is placed in separate modules. This lecture introduces the modern `import` and `export` syntax used by Node.js projects and many JavaScript libraries.
 
-## 2. 🎯 Learning Objectives
+# 2. 🎯 Learning Objectives
 
 By the end of this lecture, you should understand:
 
@@ -22,7 +33,7 @@ By the end of this lecture, you should understand:
 - Basic local module file paths
 - How to build a small module-based Node.js project
 
-## 3. 🧩 What Is a Module?
+# 3. 🧩 What Is a Module?
 
 A module is a JavaScript file that contains related code. A file can share selected variables and functions with another file.
 
@@ -46,11 +57,11 @@ Modules help us organize code, reuse code, and maintain a project more easily.
 
 > 💡 **Simple idea:** One file can share selected code, and another file can import and use it.
 
-## 4. ✅ Why Do We Use Modules?
+# 4. ✅ Why Do We Use Modules?
 
 Keeping all code in one file can make a project difficult to read and update.
 
-### Project Without Modules
+## Project Without Modules
 
 ```text
 app.js
@@ -63,7 +74,7 @@ app.js
 
 As the project grows, this file can become confusing.
 
-### Project Using Modules
+## Project Using Modules
 
 ```text
 project/
@@ -80,7 +91,7 @@ Modules provide:
 - **Maintainability:** small files are easier to read and update.
 - **Separation of responsibilities:** each file has a clear job.
 
-## 5. 📤 Export
+# 5. 📤 Export
 
 `export` makes a variable, function, or other value available to another module.
 
@@ -93,11 +104,11 @@ export const message = "Welcome to JavaScript modules";
 
 The `message` value is now available for another module to import.
 
-## 6. 🏷️ Named Export
+# 6. 🏷️ Named Export
 
 A named export is an exported value with a specific name. A file can have multiple named exports.
 
-### Exporting a Variable
+## Exporting a Variable
 
 ```js
 // student.js
@@ -105,7 +116,7 @@ export const studentName = "Ayesha";
 export const course = "JavaScript";
 ```
 
-### Exporting a Function
+## Exporting a Function
 
 ```js
 // greeting.js
@@ -114,7 +125,7 @@ export function sayHello(name) {
 }
 ```
 
-### Exporting at the End of a File
+## Exporting at the End of a File
 
 We can also declare values first and export them at the end.
 
@@ -130,7 +141,7 @@ export { city, showCity };
 
 The names inside the export list are named exports.
 
-## 7. 📥 Named Import
+# 7. 📥 Named Import
 
 A named import receives one or more named exports from another file. Named imports use curly braces `{ }`.
 
@@ -158,7 +169,7 @@ Multiple named exports can be imported in one statement:
 import { city, showCity } from "./location.js";
 ```
 
-## 8. 🔄 Renaming Named Imports
+# 8. 🔄 Renaming Named Imports
 
 Sometimes a local name is clearer or avoids a naming conflict. Use the `as` keyword to rename a named import.
 
@@ -182,7 +193,7 @@ console.log(name);
 console.log(subject);
 ```
 
-## 9. ⭐ Default Export
+# 9. ⭐ Default Export
 
 A default export is the main value a module wants to share. A module can have only one default export.
 
@@ -205,7 +216,7 @@ export default function multiply(firstNumber, secondNumber) {
 
 Named exports and default exports are different. Named exports use their names. A default export is the module's main exported value.
 
-## 10. 📦 Default Import
+# 10. 📦 Default Import
 
 Import a default export without curly braces.
 
@@ -226,7 +237,7 @@ console.log(sum(10, 2));
 
 Both `addNumbers` and `sum` can receive the default export from `calculate.js`.
 
-## 11. ⚖️ Named Export vs Default Export
+# 11. ⚖️ Named Export vs Default Export
 
 | Feature | Named Export / Import | Default Export / Import |
 | --- | --- | --- |
@@ -250,7 +261,7 @@ export default function start() {
 import start, { version } from "./tools.js";
 ```
 
-## 12. 🔗 Multiple Named Exports + Default Export
+# 12. 🔗 Multiple Named Exports + Default Export
 
 A module can contain multiple named exports and one default export.
 
@@ -275,7 +286,7 @@ console.log(age);
 console.log(getProfile());
 ```
 
-## 13. 🌐 `import * as`
+# 13. 🌐 `import * as`
 
 `import * as` imports all named exports from a file under one name. That name is called a namespace object in this simple example.
 
@@ -309,7 +320,7 @@ import { add, subtract } from "./calculator.js";
 
 With `import * as`, all named exports are accessed through the selected name, such as `calculator.add()`.
 
-## 14. 🛠️ ES Modules
+# 14. 🛠️ ES Modules
 
 ES Modules, usually called ESM, are JavaScript's standard module system. The `import` and `export` keywords are ES Module syntax.
 
@@ -327,7 +338,7 @@ Use shared code
 
 In this lecture, we use ESM with Node.js. These same ideas will help us understand imports from the Firebase SDK in future lectures.
 
-## 15. ⚙️ `"type": "module"` in `package.json`
+# 15. ⚙️ `"type": "module"` in `package.json`
 
 When Node.js directly runs a project that uses `import` and `export`, add `"type": "module"` to `package.json`.
 
@@ -343,7 +354,7 @@ The `type` field tells Node.js to treat `.js` files in this project as ES Module
 
 In Lecture 01, we used `require()` while demonstrating package usage. In this lecture, we are learning the modern ES Module syntax: `import` and `export`. CommonJS details are outside the scope of this lecture.
 
-## 16. 📁 Module File Paths
+# 16. 📁 Module File Paths
 
 Local modules use file paths.
 
@@ -375,7 +386,7 @@ From a file inside `utils/` importing a file in the parent folder:
 import products from "../data/products.js";
 ```
 
-## 17. 💻 Complete Practical Example
+# 17. 💻 Complete Practical Example
 
 Create a folder named `module-practice` with this structure:
 
@@ -387,7 +398,7 @@ module-practice/
 └── app.js
 ```
 
-### `package.json`
+## `package.json`
 
 ```json
 {
@@ -397,7 +408,7 @@ module-practice/
 }
 ```
 
-### `profile.js` — Named Exports
+## `profile.js` — Named Exports
 
 ```js
 export const studentName = "Ayesha";
@@ -408,7 +419,7 @@ export function getStudentInfo() {
 }
 ```
 
-### `message.js` — Default Export
+## `message.js` — Default Export
 
 ```js
 export default function createMessage(name) {
@@ -416,7 +427,7 @@ export default function createMessage(name) {
 }
 ```
 
-### `app.js` — Import and Use the Exports
+## `app.js` — Import and Use the Exports
 
 ```js
 import {
@@ -447,9 +458,9 @@ Ayesha is learning JavaScript.
 Welcome, Class 39!
 ```
 
-## 18. ⚠️ Common Beginner Mistakes
+# 18. ⚠️ Common Beginner Mistakes
 
-### Mistake 1: Forgetting `export`
+## Mistake 1: Forgetting `export`
 
 Problem: another file cannot import a value that was not exported.
 
@@ -461,7 +472,7 @@ const name = "Ali";
 export const name = "Ali";
 ```
 
-### Mistake 2: Importing a value that was not exported
+## Mistake 2: Importing a value that was not exported
 
 Problem: the imported name must exist in the source file's exports.
 
@@ -473,7 +484,7 @@ export const name = "Ali";
 import { name } from "./profile.js";
 ```
 
-### Mistake 3: Using curly braces incorrectly
+## Mistake 3: Using curly braces incorrectly
 
 Problem: named imports need curly braces, and default imports do not.
 
@@ -485,7 +496,7 @@ import { name } from "./profile.js";
 import createMessage from "./message.js";
 ```
 
-### Mistake 4: Using curly braces with a default import
+## Mistake 4: Using curly braces with a default import
 
 Problem: `{ createMessage }` asks for a named export, not a default export.
 
@@ -497,7 +508,7 @@ import { createMessage } from "./message.js";
 import createMessage from "./message.js";
 ```
 
-### Mistake 5: Forgetting `.js`
+## Mistake 5: Forgetting `.js`
 
 Problem: local Node.js imports may fail when the file extension is missing.
 
@@ -509,7 +520,7 @@ import { name } from "./profile";
 import { name } from "./profile.js";
 ```
 
-### Mistake 6: Forgetting `"type": "module"`
+## Mistake 6: Forgetting `"type": "module"`
 
 Problem: Node.js may not treat the `.js` file as an ES Module.
 
@@ -520,7 +531,7 @@ Problem: Node.js may not treat the `.js` file as an ES Module.
 }
 ```
 
-### Mistake 7: Using an incorrect file path
+## Mistake 7: Using an incorrect file path
 
 Problem: the path must point to the correct file location.
 
@@ -529,7 +540,7 @@ Problem: the path must point to the correct file location.
 import { name } from "./profile.js";
 ```
 
-### Mistake 8: Mixing named and default syntax
+## Mistake 8: Mixing named and default syntax
 
 Problem: use the syntax that matches the type of export.
 
@@ -542,7 +553,7 @@ export default function getProfile() {}
 import getProfile, { name } from "./profile.js";
 ```
 
-## 19. 📝 Practice Task
+# 19. 📝 Practice Task
 
 Create a small project named `student-module-project`.
 
@@ -561,7 +572,7 @@ Requirements:
 
 Do not copy a complete solution. Write the modules and imports yourself, then test each part step by step.
 
-## 20. 🧠 Quick Recap
+# 20. 🧠 Quick Recap
 
 - A **module** is a JavaScript file containing related code.
 - `export` shares code from a module.
@@ -576,9 +587,9 @@ Do not copy a complete solution. Write the modules and imports yourself, then te
 - Use `./` for the current folder and `../` for the parent folder.
 - Include `.js` in local imports for this course.
 
-## 21. 🔜 What We Will Learn Next
+# 21. 🔜 What We Will Learn Next
 
-### Firebase Setup & Configuration
+## Firebase Setup & Configuration
 
 In the next lecture, we will learn:
 
@@ -588,7 +599,7 @@ In the next lecture, we will learn:
 - How to install the Firebase package
 - The basic idea of the Firebase SDK
 
-## 22. 📚 Official Documentation
+# 22. 📚 Official Documentation
 
 - [MDN JavaScript Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 - [Node.js ECMAScript Modules](https://nodejs.org/api/esm.html)

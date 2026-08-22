@@ -1,42 +1,40 @@
-# 📘 JavaScript — var, let aur const (Variables Declare Karne Ke 3 Tareeqe)
+# 📘 JavaScript — `var`, `let` and `const` (Three Ways to Declare Variables)
 
 ## 📚 Topics Covered
 
-1. **var** keyword
-2. **let** keyword
-3. **const** keyword
+1. **`var` keyword**
+2. **`let` keyword**
+3. **`const` keyword**
 
-In teeno keywords se hum JavaScript mein variables declare karte hain. Lekin in sab mein **farq** hai — scope, redeclaration, reassignment aur hoisting ke hisaab se. 🚀
+These three keywords are used to declare variables in JavaScript. However, they are different in terms of scope, redeclaration, reassignment, and hoisting.
 
-Shuruaat mein kuch baatein jo aap ne suni hongi:
+Some important points:
 
-- `var` aur `let` — dono se variables ko **dobara value assign (reassign)** kar sakte hain.
-- `const` — "constant" variable banata hai jise **dobara value assign nahi** kar sakte.
-- Developers ko **`var` use nahi** karna chahiye. `let` ya `const` use karna chahiye.
-- Agar variable ki value **change nahi** karni, to **good practice** ye hai ke `const` use karo.
+- Both `var` and `let` variables can be reassigned.
+- `const` creates a variable that cannot be reassigned.
+- Developers generally avoid `var` in modern JavaScript.
+- Use `const` when a variable's value should not change.
 
-In teeno keywords ka comparison hum **3 factors** par karenge:
+We will compare these keywords using three factors:
 
-| Factor | Matlab |
+| Factor | Meaning |
 |---|---|
-| **Scope** | Variable kahan accessible hai (global / local / block) |
-| **Redeclaration & Reassignment** | Dobara declare ya value change kar sakte hain ya nahi |
-| **Hoisting** | Declaration se pehle access karne par kya hota hai |
+| **Scope** | Where the variable can be accessed (global, local, or block) |
+| **Redeclaration & Reassignment** | Whether the variable can be declared again or its value changed |
+| **Hoisting** | What happens when a variable is accessed before its declaration |
 
----
-
-# 1. var Keyword
+# 1. `var` Keyword
 
 ## Definition
 
-> **`var` se declare kiye gaye variables ko redeclare aur reassign kiya ja sakta hai.**
+> **Variables declared with `var` can be redeclared and reassigned.**
 
-## 1.1 Scope of Variables Declared with var
+## 1.1 Scope of Variables Declared with `var`
 
-`var` se declare kiye gaye variables **global ya local** scope ke hote hain.
+Variables declared with `var` can have global or local scope.
 
-- **Global scope** → jo variables functions ke **bahar** declare hote hain.
-- **Local scope** → jo variables functions ke **andar** declare hote hain.
+- **Global scope**: a variable declared outside a function.
+- **Local scope**: a variable declared inside a function.
 
 ### Global Scope Example
 
@@ -52,7 +50,7 @@ console.log(number) // 50
 print() // 2500
 ```
 
-`number` variable ka scope **global** hai — ye functions ke bahar declare hua hai, isliye ise **har jagah** access kar sakte hain (andar aur bahar dono).
+The scope of `number` is global because it is declared outside the function. It can be accessed both inside and outside the function.
 
 ### Local Scope Example
 
@@ -69,21 +67,19 @@ console.log(number)
 // ReferenceError: number is not defined
 ```
 
-Yahan `number` variable function `print` ke **andar** declare hua, isliye iska scope **local** hai. Matlab ye variable **sirf function ke andar** accessible hai. Function ke bahar access karne par **`number is not defined`** error milta hai.
+Here, `number` is declared inside the `print` function, so its scope is local. It can only be accessed inside that function.
 
----
+## 1.2 Redeclaration and Reassignment
 
-## 1.2 Redeclaration aur Reassignment
+Variables declared with `var` can be both redeclared and reassigned.
 
-`var` se declare kiye gaye variables ko **redeclare** bhi kar sakte hain aur **reassign** bhi kar sakte hain.
-
-### Declaration ka Syntax
+### Declaration Syntax
 
 ```js
 var number = 50
 ```
 
-Yahan `var` keyword hai, variable ka naam `number` hai, aur initial value `50` hai. Agar initial value na di jaye, to default value **`undefined`** hoti hai:
+`var` is the keyword, `number` is the variable name, and `50` is the initial value. If no initial value is provided, the default value is `undefined`:
 
 ```js
 var number
@@ -91,7 +87,7 @@ console.log(number)
 // undefined
 ```
 
-### ✅ Redeclaration (Dobara Declare Karna)
+### ✅ Redeclaration
 
 ```js
 var number = 50
@@ -101,9 +97,9 @@ var number = 100
 console.log(number) // 100
 ```
 
-Dekha aapne — `number` ko `var` keyword ke saath **dobara declare** kiya gaya, koi error nahi aaya.
+The variable `number` is declared again with `var`, and no error occurs.
 
-### ✅ Reassignment (Value Change Karna)
+### ✅ Reassignment
 
 ```js
 var number = 50
@@ -116,15 +112,13 @@ number = 200
 console.log(number) // 200
 ```
 
-Yahan hum **redeclare** nahi kar rahe — **reassign** kar rahe hain. Pehli baar `50` diya, phir `100`, phir `200` — sab chalta hai kyunki variable `var` se declare hua hai.
+This is reassignment, not redeclaration. The value changes from `50` to `100`, and then to `200`.
 
----
+## 1.3 Hoisting with `var`
 
-## 1.3 Hoisting (var ke saath)
+Variables declared with `var` are hoisted to the top of their scope. This means they can be accessed before the declaration line.
 
-`var` se declare kiye gaye variables **hoisted** hote hain — matlab wo apne scope ke **top par** chale jate hain. Isliye unhe declaration ki line se **pehle** bhi access kar sakte hain.
-
-Lekin **yaad rakho** — `var` **default value `undefined`** ke saath hoisted hota hai.
+Remember that a `var` variable is hoisted with the default value `undefined`.
 
 ### Global Scope Example
 
@@ -134,7 +128,7 @@ var number = 50
 console.log(number) // 50
 ```
 
-`number` variable hoisted hai, isliye declaration se pehle bhi access ho gaya — bina error ke. Lekin us waqt iski value **`undefined`** thi (kyunki initial value wali line abhi execute nahi hui thi).
+The declaration is hoisted, so accessing `number` before the declaration does not produce an error. Its value is `undefined` because the assignment has not executed yet.
 
 ### Local Scope Example
 
@@ -154,41 +148,37 @@ print()
 // 2500
 ```
 
-Function `print` mein `number` ka scope **local** hai. Hoisting ki wajah se hum `number` ko declaration se pehle access kar rahe hain.
+Inside `print`, the local declaration of `number` is hoisted.
 
-- `square1` mein `number * number` — `number` abhi `undefined` hai, isliye `undefined * undefined` = **`NaN`**.
-- Declaration line execute hone ke baad `number` ki value `50` ho gayi.
-- Isliye `square2` mein `50 * 50` = **`2500`**.
+- In `square1`, `number` is still `undefined`, so `undefined * undefined` becomes `NaN`.
+- After the assignment runs, `number` becomes `50`.
+- Therefore, `square2` is `50 * 50`, which is `2500`.
 
----
+## ⚠️ Problems with `var`
 
-## ⚠️ var ke Problems
+The hoisting behavior of `var` can create unexpected bugs. For this reason, developers generally avoid using `var` in modern JavaScript and prefer `let` or `const`.
 
-`var` ki hoisting behavior **unexpected bugs** paida kar sakti hai. Isliye developers **modern JavaScript mein `var` use karne se bachte** hain. Umeed hai ab clear ho gaya ke `var` kyun avoid karna chahiye.
-
----
-
-# 2. let Keyword
+# 2. `let` Keyword
 
 ## Definition
 
-> **`let` se declare kiye gaye variables ko reassign toh kar sakte hain, lekin redeclare nahi kar sakte.**
+> **Variables declared with `let` can be reassigned, but they cannot be redeclared in the same scope.**
 
-## 2.1 Scope of Variables Declared with let
+## 2.1 Scope of Variables Declared with `let`
 
-`let` se declare kiye gaye variables **global, local, ya block** scope ke ho sakte hain.
+Variables declared with `let` can have global, local, or block scope.
 
-**Block** kya hota hai? JavaScript mein **opening aur closing curly braces** `{}` ke beech wala hissa block hai:
+A **block** is the code between opening and closing curly braces `{}`:
 
 ```js
 {
-  // ye ek block hai
+  // This is a block.
 }
 ```
 
-Blocks `if`, loops, `switch` aur kuch aur statements mein milte hain. In blocks mein `let` se declare kiye gaye variables ka **block scope** hota hai — matlab **block ke bahar access nahi** kar sakte.
+Blocks are used with `if` statements, loops, `switch`, and other statements. A `let` variable declared inside a block cannot be accessed outside that block.
 
-### Global, Local aur Block Scope Example
+### Global, Local, and Block Scope Example
 
 ```js
 let number = 50
@@ -212,20 +202,18 @@ print()
 // ReferenceError: anotherLargerNumber is not defined
 ```
 
-Is example mein:
+In this example:
 
-- `number` → **global scope** (function ke bahar declare)
-- `square` → **local scope** (function `print` ke andar declare)
-- `anotherLargerNumber` → **block scope** (kyunki `let` se block `{}` mein declare)
-- `largerNumber` → block mein declare hone ke bawajood **`var`** hai, isliye iska scope **local** hai — block se bahar bhi access ho gaya (`80` print hua).
+- `number` has **global scope** because it is declared outside the function.
+- `square` has **local scope** because it is declared inside `print`.
+- `anotherLargerNumber` has **block scope** because it is declared with `let` inside the block.
+- `largerNumber` is declared with `var`, so it has local function scope and can be accessed outside the block.
 
-`anotherLargerNumber` ko block ke bahar access karne par **`anotherLargerNumber is not defined`** error aata hai.
+Accessing `anotherLargerNumber` outside the block causes a `ReferenceError`.
 
----
+## 2.2 Redeclaration and Reassignment
 
-## 2.2 Redeclaration aur Reassignment
-
-`var` ki tarah, `let` wale variables ko **reassign** kar sakte hain, lekin **redeclare nahi** kar sakte.
+Like `var`, a `let` variable can be reassigned. Unlike `var`, it cannot be redeclared in the same scope.
 
 ### ✅ Reassignment
 
@@ -237,9 +225,9 @@ number = 100
 console.log(number) // 100
 ```
 
-Yahan initial value `50` ke baad humne `100` reassign ki — ye chalta hai.
+The value is changed from `50` to `100`, so this is valid reassignment.
 
-### ❌ Redeclaration (Error)
+### ❌ Redeclaration Error
 
 ```js
 let number = 50
@@ -247,16 +235,14 @@ let number = 100
 // SyntaxError: Identifier 'number' has already been declared
 ```
 
-`let` se **dobara declare** karne par error milta hai: **`Identifier 'number' has already been declared`**.
+Declaring `number` again with `let` causes a syntax error.
 
----
+## 2.3 Hoisting with `let`
 
-## 2.3 Hoisting (let ke saath)
+`let` variables are hoisted differently from `var` variables:
 
-`let` wale variables bhi hoisted hote hain, lekin **hoisting unki `var` se different** hai:
-
-- `var` → **default value `undefined`** ke saath hoisted hota hai (isliye pehle access ho jata hai).
-- `let` → **bina default initialization** ke hoisted hota hai. Isliye access karne par `undefined` ya "not defined" nahi, balki **`Cannot access before initialization`** error milta hai.
+- `var` is hoisted with the default value `undefined`.
+- `let` is hoisted without initialization. Accessing it before declaration causes `Cannot access before initialization`.
 
 ### Global Scope Example
 
@@ -266,8 +252,6 @@ console.log(number)
 
 let number = 50
 ```
-
-Yahan `number` ko declaration se pehle access karne par **ReferenceError: Cannot access 'number' before initialization** milta hai.
 
 ### Local Scope Example
 
@@ -281,19 +265,17 @@ print()
 // ReferenceError: Cannot access 'number' before initialization
 ```
 
-Local scope mein bhi wahi baat — declaration se pehle access karne par **same reference error** milta hai.
+The same error occurs in local scope when a `let` variable is accessed before its declaration.
 
----
-
-# 3. const Keyword
+# 3. `const` Keyword
 
 ## Definition
 
-> **`const` "constant" variables banata hai — jinki value change nahi ho sakti. Na redeclare, na reassign.**
+> **`const` creates constant variables. They cannot be redeclared or reassigned.**
 
-## 3.1 Scope of Variables Declared with const
+## 3.1 Scope of Variables Declared with `const`
 
-Scope ke hisaab se `const` bilkul `let` jaisa hai — **global, local, ya block** scope ho sakta hai.
+The scope rules of `const` are the same as `let`: it can have global, local, or block scope.
 
 ```js
 const number = 50
@@ -317,22 +299,20 @@ print()
 // ReferenceError: anotherLargerNumber is not defined
 ```
 
-Ye wahi example hai jo upar `let` ka tha, bas `let` ki jagah `const` laga diya.
+In this example:
 
-- `number` → **global scope**
-- `square` → **local scope**
-- `anotherLargerNumber` → **block scope** (const se block mein declare)
-- `largerNumber` → `var` hone ki wajah se **local scope**, block ke bahar bhi accessible (`80`)
+- `number` has **global scope**.
+- `square` has **local scope**.
+- `anotherLargerNumber` has **block scope** because it is declared with `const` inside the block.
+- `largerNumber` has local scope because it is declared with `var`.
 
-`anotherLargerNumber` ko block ke bahar access karne par **`anotherLargerNumber is not defined`** error.
+Accessing `anotherLargerNumber` outside the block causes an error.
 
----
+## 3.2 Redeclaration and Reassignment
 
-## 3.2 Redeclaration aur Reassignment
+`const` is different from both `var` and `let`. A `const` variable cannot be redeclared or reassigned.
 
-Is hisaab se `const`, `var` aur `let` se **bilkul different** hai. `const` wale variables ko **na redeclare** kar sakte hain **na reassign** — dono par error aata hai.
-
-### ❌ Redeclaration (Error)
+### ❌ Redeclaration Error
 
 ```js
 const number = 50
@@ -340,7 +320,7 @@ const number = 100
 // SyntaxError: Identifier 'number' has already been declared
 ```
 
-### ❌ Reassignment (Error)
+### ❌ Reassignment Error
 
 ```js
 const number = 50
@@ -348,13 +328,9 @@ number = 100
 // TypeError: Assignment to constant variable
 ```
 
-Reassign karne par **`TypeError: Assignment to constant variable`** milta hai.
+## 3.3 Hoisting with `const`
 
----
-
-## 3.3 Hoisting (const ke saath)
-
-`const` bhi `let` ki tarah hoisted hota hai — **bina default initialization** ke. Isliye declaration se pehle access karne par **`Cannot access before initialization`** error milta hai.
+Like `let`, `const` is hoisted without initialization. Accessing it before declaration causes `Cannot access before initialization`.
 
 ```js
 console.log(number)
@@ -363,65 +339,57 @@ console.log(number)
 const number = 50
 ```
 
----
-
 # 📊 Comparison Table (Quick Summary)
 
 | Keyword | Scope | Redeclaration | Reassignment | Hoisting |
 |---|---|---|---|---|
-| `var` | Global, Local | ✅ Yes | ✅ Yes | ✅ Yes, **default value `undefined`** ke saath |
-| `let` | Global, Local, Block | ❌ No | ✅ Yes | ✅ Yes, **bina default value** ke |
-| `const` | Global, Local, Block | ❌ No | ❌ No | ✅ Yes, **bina default value** ke |
+| `var` | Global, Local | ✅ Yes | ✅ Yes | ✅ Yes, with default value `undefined` |
+| `let` | Global, Local, Block | ❌ No | ✅ Yes | ✅ Yes, without a default value |
+| `const` | Global, Local, Block | ❌ No | ❌ No | ✅ Yes, without a default value |
 
----
-
-# ✅ Kab Kaunsa Use Karein
+# ✅ When Should You Use Which Keyword?
 
 | Situation | Keyword |
 |---|---|
-| Variable ki value **kabhi change nahi** karni | `const` |
-| Value **reassign** karni hai aur **hoisting behavior nahi** chahiye | `let` |
-| Value **reassign** karni hai aur **hoisting behavior chahiye** | `var` (⚠️ generally avoid karo) |
+| The variable's value should never change | `const` |
+| The value must be reassigned and predictable block scope is needed | `let` |
+| The value must be reassigned and old hoisting behavior is specifically needed | `var` (⚠️ generally avoid it) |
 
-> 💡 `var` ki hoisting behavior **unexpected bugs** paida kar sakti hai — isi liye developers ko advised kiya jata hai ke `var` avoid karein aur `let` / `const` use karein.
-
----
+> The hoisting behavior of `var` can create unexpected bugs. Use `let` and `const` in modern JavaScript.
 
 # ⭐ Final Revision
 
-### var — Redeclare + Reassign, Hoisted (undefined)
+### `var` — Redeclare + Reassign, Hoisted with `undefined`
 
 ```js
 var number = 50
 console.log(number) // 50
-var number = 100    // ✅ redeclare chalta hai
+var number = 100    // ✅ redeclaration is allowed
 console.log(number) // 100
 ```
 
-### let — Sirf Reassign, Hoisted (bina value)
+### `let` — Reassign Only, Hoisted without a Value
 
 ```js
 let number = 50
-number = 100        // ✅ reassign chalta hai
-// let number = 100 ❌ redeclare error
+number = 100        // ✅ reassignment is allowed
+// let number = 100 // ❌ redeclaration error
 ```
 
-### const — Na Redeclare, Na Reassign
+### `const` — No Redeclaration, No Reassignment
 
 ```js
 const number = 50
-// number = 100 ❌ TypeError: Assignment to constant variable
-// const number = 100 ❌ SyntaxError: already been declared
+// number = 100     // ❌ TypeError: Assignment to constant variable
+// const number = 100 // ❌ SyntaxError: already been declared
 ```
-
----
 
 ## 🧠 Remember
 
 ```text
 var   → redeclare ✅ | reassign ✅ | hoisted with undefined
-let   → redeclare ❌ | reassign ✅ | hoisted without default value
-const → redeclare ❌ | reassign ❌ | hoisted without default value
+let   → redeclare ❌ | reassign ✅ | hoisted without a default value
+const → redeclare ❌ | reassign ❌ | hoisted without a default value
 
 Scope:
 var   → Global, Local
@@ -429,7 +397,7 @@ let   → Global, Local, Block
 const → Global, Local, Block
 
 Best Practice:
-→ Jo value change nahi karni → const
-→ Jo value change karni hai   → let
-→ var → avoid ❌
+→ If the value should not change → const
+→ If the value should change      → let
+→ var                             → avoid when possible ❌
 ```

@@ -4,7 +4,18 @@ In this lecture, we will learn how JavaScript projects use Node.js, npm, and ext
 
 These ideas are important before learning JavaScript modules and Firebase.
 
-## 1. 🎯 Learning Objectives
+## 📚 Topics Covered
+
+1. **Node.js and Runtime Environment**
+2. **Browser JavaScript vs Node.js**
+3. **npm and Packages**
+4. **Dependencies and `package.json`**
+5. **`node_modules` and `package-lock.json`**
+6. **Installing and Using Axios**
+7. **Creating a Node.js Project**
+8. **Using `.gitignore` with `node_modules`**
+
+# 1. 🎯 Learning Objectives
 
 By the end of this lecture, you should understand:
 
@@ -16,7 +27,7 @@ By the end of this lecture, you should understand:
 - How to install and use a package
 - Why `node_modules` is not uploaded to GitHub
 
-## 2. 🟢 What Is Node.js?
+# 2. 🟢 What Is Node.js?
 
 Node.js is a JavaScript runtime environment that allows us to run JavaScript outside the browser.
 
@@ -49,7 +60,7 @@ node app.js
 
 Node.js executes the file and prints the message in the terminal.
 
-## 3. ⚖️ Browser JavaScript vs Node.js
+# 3. ⚖️ Browser JavaScript vs Node.js
 
 | Browser JavaScript | Node.js |
 | --- | --- |
@@ -60,7 +71,7 @@ Node.js executes the file and prints the message in the terminal.
 
 This lecture focuses only on the basic Node.js and npm ecosystem.
 
-## 4. 💻 Install and Check Node.js
+# 4. 💻 Install and Check Node.js
 
 Node.js includes npm. After installing Node.js, check both versions:
 
@@ -72,7 +83,7 @@ npm -v
 - `node -v` shows the installed Node.js version.
 - `npm -v` shows the installed npm version.
 
-## 5. 📦 What Is npm?
+# 5. 📦 What Is npm?
 
 npm stands for **Node Package Manager**. It helps developers install and manage reusable packages in JavaScript projects.
 
@@ -90,7 +101,7 @@ flowchart LR
     C --> D[Use Packages]
 ```
 
-## 6. 🛠️ Create a Node.js Project
+# 6. 🛠️ Create a Node.js Project
 
 Create a folder named:
 
@@ -115,7 +126,7 @@ node-npm-class/
 └── package.json
 ```
 
-## 7. 📄 What Is `package.json`?
+# 7. 📄 What Is `package.json`?
 
 `package.json` is an important file that stores information about a JavaScript or Node.js project and its dependencies.
 
@@ -153,7 +164,7 @@ For example, after installing Axios, it may appear like this:
 
 Axios is added to `dependencies` after running `npm install axios`.
 
-## 8. 🧩 What Is a Package?
+# 8. 🧩 What Is a Package?
 
 A package is reusable code that developers can install and use in their projects.
 
@@ -169,7 +180,7 @@ External Package
 Reusable Functionality
 ```
 
-## 9. 🔗 What Is a Dependency?
+# 9. 🔗 What Is a Dependency?
 
 A dependency is a package that a project needs for certain functionality.
 
@@ -183,7 +194,7 @@ For example:
 
 After installation, Axios becomes a dependency of the project.
 
-## 10. 🚀 Install Axios
+# 10. 🚀 Install Axios
 
 Axios is a popular JavaScript library used to make HTTP requests.
 
@@ -207,7 +218,7 @@ package.json is updated
 package-lock.json is created or updated
 ```
 
-## 11. 📁 What Is `node_modules`?
+# 11. 📁 What Is `node_modules`?
 
 `node_modules` is the folder where npm stores installed packages and their dependencies.
 
@@ -224,7 +235,7 @@ node-npm-class/
 - Installed packages are stored inside it.
 - Developers normally do not edit it manually.
 
-## 12. 🔒 What Is `package-lock.json`?
+# 12. 🔒 What Is `package-lock.json`?
 
 `package-lock.json` records the exact dependency tree and resolved package versions used by the project.
 
@@ -238,7 +249,7 @@ package-lock.json
 Exact dependency versions installed
 ```
 
-## 13. ✅ Using the Installed Package
+# 13. ✅ Using the Installed Package
 
 Update `app.js` with this example:
 
@@ -265,14 +276,14 @@ Basic idea:
 
 > We are using `require()` here only to demonstrate the installed package. The module system and modern `import`/`export` syntax will be taught properly in Lecture 02.
 
-## 14. 🔄 `npm install` vs `npm install package-name`
+# 14. 🔄 `npm install` vs `npm install package-name`
 
 | Command | Purpose |
 | --- | --- |
 | `npm install axios` | Install Axios and add it to the project dependencies |
 | `npm install` | Install all dependencies listed in `package.json` |
 
-## 15. ⚠️ Why `node_modules` Should Not Be Uploaded to GitHub
+# 15. ⚠️ Why `node_modules` Should Not Be Uploaded to GitHub
 
 The `node_modules` folder can be very large, so it should normally not be committed to GitHub.
 
@@ -292,7 +303,7 @@ npm install
 
 npm will read `package.json` and install the required dependencies.
 
-## 16. 📂 Final Project Structure
+# 16. 📂 Final Project Structure
 
 ```text
 node-npm-class/
@@ -312,7 +323,7 @@ node-npm-class/
 | `node_modules` | Installed packages |
 | `.gitignore` | Tells Git what to ignore |
 
-## 17. ⌨️ Important Commands
+# 17. ⌨️ Important Commands
 
 | Command | Purpose |
 | --- | --- |
@@ -323,31 +334,31 @@ node-npm-class/
 | `npm install` | Install project dependencies |
 | `node app.js` | Run a JavaScript file with Node.js |
 
-## 18. ⚠️ Common Beginner Mistakes
+# 18. ⚠️ Common Beginner Mistakes
 
-### Mistake 1: Running npm commands outside the project folder
+## Mistake 1: Running npm commands outside the project folder
 
 Open the terminal in the folder that contains `package.json`.
 
-### Mistake 2: Forgetting to install dependencies
+## Mistake 2: Forgetting to install dependencies
 
 Run `npm install` before running a project downloaded from another computer.
 
-### Mistake 3: Uploading `node_modules` to GitHub
+## Mistake 3: Uploading `node_modules` to GitHub
 
 Add `node_modules/` to `.gitignore`.
 
-### Mistake 4: Manually changing dependency versions
+## Mistake 4: Manually changing dependency versions
 
 Do not change versions unless you understand why the change is needed.
 
-### Mistake 5: Thinking npm is a programming language
+## Mistake 5: Thinking npm is a programming language
 
 npm is a tool for managing JavaScript packages and project dependencies.
 
-## 19. 📝 Practice Task
+# 19. 📝 Practice Task
 
-### Axios API Practice
+## Axios API Practice
 
 1. Create a project folder.
 2. Run `npm init -y`.
@@ -372,7 +383,7 @@ npm is a tool for managing JavaScript packages and project dependencies.
    node_modules/
    ```
 
-## 20. 🧠 Quick Recap
+# 20. 🧠 Quick Recap
 
 1. What is Node.js?
 2. What is npm?
@@ -382,7 +393,7 @@ npm is a tool for managing JavaScript packages and project dependencies.
 6. What is `node_modules`?
 7. What is the difference between `npm install axios` and `npm install`?
 
-## 21. 🔜 What We Will Learn Next
+# 21. 🔜 What We Will Learn Next
 
 In the next lecture, we will learn JavaScript Modules:
 
@@ -398,7 +409,7 @@ In the next lecture, we will learn JavaScript Modules:
 **Next Lecture:** JavaScript Modules — `import` & `export`
 
 
-## 22. 📚 Official Documentation
+# 22. 📚 Official Documentation
 
 - [Node.js Official Website](https://nodejs.org/)
 - [npm Official Website](https://www.npmjs.com/)

@@ -5,7 +5,7 @@
 1. **Function Expression**
 2. **Arrow Function**
 
-Ye dono JavaScript functions ko define karne ke **modern** tareeqe hain. Function Expression ES5 mein aaya, aur Arrow Function **ES6 (2015)** mein introduce hua. React, Next.js aur modern JavaScript mein har jagah inka use hota hai.
+These are modern ways to define JavaScript functions. Function expressions were introduced in ES5, and arrow functions were introduced in ES6 (2015). They are widely used in modern JavaScript.
 
 ---
 
@@ -15,7 +15,7 @@ Ye dono JavaScript functions ko define karne ke **modern** tareeqe hain. Functio
 
 > **A function expression is a function stored in a variable.**
 
-Function expression ka matlab hai — function ko seedha kisi **variable ke andar store** karna.
+A function expression stores a function directly inside a variable.
 
 ### Standard Function vs Function Expression
 
@@ -33,9 +33,9 @@ const multiply = function(a, b) {
 
 ---
 
-## 1.1 Function Ko Variable Ki Tarah Use Karna
+## 1.1 Using a Function Like a Variable
 
-Jab function expression variable mein store ho jata hai, to us variable ko **function ki tarah call** kar sakte hain.
+When a function expression is stored in a variable, that variable can be called like a function.
 
 ### Example
 
@@ -57,13 +57,13 @@ console.log(z);
 
 ## 1.2 Anonymous Functions
 
-Function expressions commonly **anonymous functions** banane ke liye use hote hain.
+Function expressions are commonly used to create **anonymous functions**.
 
-- Upar wala function actually **bina name ka** function hai.
-- Variables mein store functions ko **name ki zaroorat nahi** hoti.
-- **Variable ka naam** use hota hai function ko call karne ke liye.
+- The function in the first example has no name.
+- A function stored in a variable does not need its own name.
+- The variable name is used to call the function.
 
-Lekin function expression **named** bhi ho sakta hai:
+A function expression can also have a name:
 
 ```js
 const add = function add(a, b) { return a + b; };
@@ -71,11 +71,9 @@ const add = function add(a, b) { return a + b; };
 
 ---
 
-## 1.3 Function Expression Semicolon Use Karta Hai
+## 1.3 Function Expressions Use Semicolons
 
-Function expression ek **JavaScript statement** hai.
-
-Isliye ye usually **semicolon (`;`)** ke saath end hota hai.
+A function expression is a JavaScript statement. It usually ends with a semicolon (`;`).
 
 ### Example
 
@@ -89,13 +87,15 @@ const add = function(a, b) {
 
 ## 1.4 Functions Stored in Variables (Callbacks)
 
-Kyunki function expression ek variable mein store hota hai, isliye ise **value ki tarah** use kiya ja sakta hai.
+Because a function expression is stored in a variable, it can be used like a value.
 
-Ye tab bahut useful hai jab hum functions ko doosre functions mein pass karte hain (**callbacks**).
+This is useful when functions are passed to other functions as **callbacks**.
 
-- Variable mein assign kiya ja sakta hai
-- Kisi doosre function mein **argument** ki tarah pass kiya ja sakta hai
-- Kisi function se **return** kiya ja sakta hai
+A function stored in a variable can be:
+
+- Assigned to a variable
+- Passed to another function as an argument
+- Returned from another function
 
 ### Example
 
@@ -115,18 +115,18 @@ run(sayHello);
 
 ## 1.5 Function Declaration vs Function Expression
 
-JavaScript functions ko define karne ke 2 tareeqe hain. Dono **call karne par same kaam** karte hain.
+There are two common ways to define a JavaScript function. Both perform the same kind of work when called.
 
-Farq sirf itna hai ke wo **code mein kab available** hote hain.
+The main difference is when they become available in the code.
 
 ### Syntax Comparison
 
 | | Function Declaration | Function Expression |
 |---|---|---|
-| `function` keyword | ✅ | ✅ |
-| Function name | ✅ **Required** | ❌ Optional (anonymous) |
-| Parameters | ✅ | ✅ |
-| Code block | ✅ | ✅ |
+| `function` keyword | ✅ Yes | ✅ Yes |
+| Function name | ✅ Required | ❌ Optional (can be anonymous) |
+| Parameters | ✅ Yes | ✅ Yes |
+| Code block | ✅ Yes | ✅ Yes |
 | **Example** | `function add(a, b) { return a + b; }` | `const add = function(a, b) { return a + b; };` |
 
 ### Example
@@ -139,25 +139,25 @@ const sayHello = function() {
 sayHello();
 ```
 
-- Function `sayHello` variable mein store hai.
-- Chalane ke liye hum `sayHello()` call karte hain.
-- `sayHello` = function ka **reference**, `sayHello()` = function ko **call** karna.
+- The function is stored in the `sayHello` variable.
+- We call it with `sayHello()`.
+- `sayHello` is the function reference, while `sayHello()` calls the function.
 
 ---
 
-## 1.6 Hoisting (Sabse Important Farq)
+## 1.6 Hoisting (The Most Important Difference)
 
-**Function Declarations** ko define karne se **pehle** call kiya ja sakta hai, kyunki wo apne scope ke top par **hoisted** ho jate hain.
+Function declarations can be called before their declaration because they are hoisted to the top of their scope.
 
 ```js
-let sum = add(2, 3); // ✅ Ye chalega
+let sum = add(2, 3); // ✅ This works
 function add(a, b) { return a + b; }
 ```
 
-**Function Expressions** ko define karne se **pehle call nahi** kiya ja sakta. Ye execution ke waqt tab banate hain jab code un tak pahunchta hai.
+Function expressions cannot be called before they are created. They are created when execution reaches their assignment.
 
 ```js
-let sum = add(2, 3); // ⛔ Error aaega
+let sum = add(2, 3); // ❌ Error
 const add = function (a, b) { return a + b; };
 ```
 
@@ -165,28 +165,28 @@ const add = function (a, b) { return a + b; };
 
 | Feature | Function Declaration | Function Expression |
 |---|---|---|
-| Syntax | Name **required** hai | Anonymous ho sakta hai |
-| Hoisting | ✅ Hoisted hai | ❌ Hoisted nahi |
-| Flexibility | General-purpose | Assigning, callbacks, event handlers |
+| Syntax | Name is **required** | Can be anonymous |
+| Hoisting | ✅ Hoisted | ❌ Not available before assignment |
+| Flexibility | General-purpose functions | Assignments, callbacks, and event handlers |
 
 ---
 
-## 1.7 Use Cases (Kab Use Karein)
+## 1.7 Use Cases
 
-- **Function declarations** → general-purpose functions ke liye
-- **Function expressions** → jab function ko variable mein assign karna ho
-- **Function expressions** → callbacks aur event handlers mein
+- **Function declarations**: general-purpose functions
+- **Function expressions**: when a function must be assigned to a variable
+- **Function expressions**: callbacks and event handlers
 
-Arrow Functions, Callbacks, Closures aur IIFEs — ye sab function expressions par hi bane hain.
+Arrow functions, callbacks, closures, and IIFEs are commonly built from function expressions.
 
 ---
 
 ## ⚠️ Common Mistakes
 
-1. **Semicolon bhoolna** — Function expression ek statement hai, `;` se end karna chahiye.
-2. **Hoisting ki ummeed** — Function expression ko define karne se pehle call nahi kar sakte.
-3. **Reference vs Call confuse karna** — `sayHello` function hai, `sayHello()` use call karta hai.
-4. **Variable naam ko function name samajhna** — Expression mein **variable ka naam** hi function ka reference hai.
+1. **Forgetting the semicolon**: a function expression is a statement and should normally end with `;`.
+2. **Expecting hoisting**: do not call a function expression before it is assigned.
+3. **Confusing a reference and a call**: `sayHello` is the function reference, while `sayHello()` calls it.
+4. **Confusing the variable name with a function declaration name**: in an expression, the variable holds the function reference.
 
 ---
 
@@ -194,27 +194,25 @@ Arrow Functions, Callbacks, Closures aur IIFEs — ye sab function expressions p
 
 ## Definition
 
-> **Arrow Functions allow a shorter syntax for function expressions.**
+> **Arrow functions provide a shorter syntax for function expressions.**
 
-Arrow function function expressions likhne ka **short syntax** hai. Ye **ES6** mein introduce hua aur modern JavaScript mein commonly use hota hai.
+An arrow function is a shorter way to write a function expression. It was introduced in ES6 and is commonly used in modern JavaScript.
 
 ```js
 const multiply = (a, b) => a * b;
 ```
 
-Arrow function mein hum skip kar sakte hain:
+In short arrow functions, we can sometimes skip:
 
-- `function` keyword
-- `return` keyword
+- The `function` keyword
+- The `return` keyword
 - Curly brackets `{}`
 
 ---
 
 ## 2.1 Arrow Function Syntax
 
-Arrow function `=>` symbol use karta hai.
-
-**Arrow function hamesha function expression ki tarah** likha jata hai.
+Arrow functions use the `=>` symbol. An arrow function is always written as an expression.
 
 ### Example
 
@@ -224,21 +222,21 @@ const add = (a, b) => {
 };
 ```
 
-Ye arrow function bilkul wahi kaam karta hai jo regular function expression karta hai.
+This arrow function performs the same work as a regular function expression.
 
 ---
 
-## 2.2 Shorter Syntax (Ek Statement Wala)
+## 2.2 Shorter Syntax (One Statement)
 
-Agar function body mein **sirf ek statement** ho, to hum `function` keyword, curly brackets aur `return` keyword hata sakte hain.
+If the function body contains one statement, we can remove the `function` keyword, curly brackets, and `return` keyword.
 
-### Before Arrow
+### Before Arrow Function
 
 ```js
 const multiply = function(a, b) { return a * b; };
 ```
 
-### With Arrow
+### With Arrow Function
 
 ```js
 const multiply = (a, b) => a * b;
@@ -247,40 +245,40 @@ const multiply = (a, b) => a * b;
 ### Another Example
 
 ```js
-// Before Arrow
+// Before Arrow Function
 const hello = function() { return "Hello World!"; };
 
-// With Arrow
+// With Arrow Function
 const hello = () => "Hello World!";
 ```
 
 ---
 
-## 2.3 One Parameter — Parentheses Optional
+## 2.3 One Parameter — Parentheses Are Optional
 
-Agar function mein **sirf ek parameter** ho, to parentheses `()` hata sakte hain.
+When a function has exactly one parameter, the parentheses can be removed.
 
 ```js
-// With Parentheses
+// With parentheses
 const square = (x) => x * x;
 
-// Without Parentheses
+// Without parentheses
 const square = x => x * x;
 ```
 
 ```js
-// With Parentheses
+// With parentheses
 const hello = (val) => "Hello " + val;
 
-// Without Parentheses
+// Without parentheses
 const hello = val => "Hello " + val;
 ```
 
 ---
 
-## 2.4 No Parameters — Parentheses Required
+## 2.4 No Parameters — Parentheses Are Required
 
-Agar **koi parameter na ho**, to parentheses `()` **zaroori** hain.
+When there are no parameters, the parentheses are required.
 
 ```js
 const hello = () => "Hello World!";
@@ -290,40 +288,40 @@ const hello = () => "Hello World!";
 
 ## 2.5 Return Value by Default
 
-Agar function mein **sirf ek statement ho jo value return karta hai**, to brackets aur `return` keyword hata sakte hain.
+If a function has one statement that returns a value, curly brackets and the `return` keyword can be removed.
 
 ```js
 const hello = () => "Hello World!";
 ```
 
-> Ye tabhi kaam karta hai jab function mein **sirf ek statement** ho.
+> This shorthand works when the function has one expression that should be returned.
 
 ### ⚠️ Warning
 
 ```js
-// ❌ Ye undefined return karega (return keyword nahi likha)
+// ❌ This returns undefined because there is no return keyword
 const myFunction = (x, y) => { x * y };
 ```
 
 ```js
-// ❌ Ye error hai (return keyword curly brackets ke bahar use nahi ho sakta)
+// ❌ This is invalid syntax
 const myFunction = (x, y) => return x * y;
 ```
 
 ```js
-// ✅ Ye expected result return karega
+// ✅ This returns the expected result
 const myFunction = (x, y) => { return x * y };
 ```
 
-Isliye **achhi habit** ye hai ke brackets aur `return` hamesha rakhein jab logic thora sa bhi complex ho.
+As a good habit, keep curly brackets and `return` when the logic becomes even slightly complex.
 
 ---
 
 ## 2.6 Arrow Functions Are Not Declarations
 
-Arrow functions **hamesha expressions** hote hain, isliye inhe variable mein assign karna zaroori hai.
+Arrow functions are always expressions, so they must be assigned to a variable before use.
 
-**Use karne se pehle define** karna lazmi hai (hoisted nahi hote).
+They are not available before the assignment.
 
 ```js
 hello(); // ❌ Error
@@ -332,13 +330,11 @@ const hello = () => "Hello";
 
 ---
 
-## 2.7 Arrow Functions and `this` Keyword
+## 2.7 Arrow Functions and the `this` Keyword
 
-Arrow functions ka **apna `this` nahi hota**.
+Arrow functions do not have their own `this`. They inherit `this` from the surrounding code (parent scope).
 
-Ye `this` ko **surrounding code (parent scope) se inherit** karte hain.
-
-### Regular Function as Method
+### Regular Function as a Method
 
 ```js
 const person = {
@@ -349,40 +345,40 @@ const person = {
 };
 ```
 
-### Arrow Function as Method
+### Arrow Function as a Method
 
 ```js
 const person = {
   name: "John",
   greet: () => {
-    return this.name;  // ❌ this person object ko refer nahi karta
+    return this.name;  // ❌ this does not refer to the person object
   }
 };
 ```
 
-Arrow function ko **object method** ki tarah use karna often **unexpected results** deta hai, kyunki `this` object ko point nahi karta.
+Using an arrow function as an object method can produce unexpected results because its `this` does not point to the object.
 
 ---
 
 ## When to Use Arrow Functions ✅
 
-- **Short functions** ke liye
-- **Callbacks aur array methods** ke liye (map, filter, forEach, etc.)
-- Jab **apna `this`** na chahiye ho
+- For short functions
+- For callbacks and array methods such as `map`, `filter`, and `forEach`
+- When the function should not have its own `this`
 
-## When NOT to Use Arrow Functions ❌
+## When Not to Use Arrow Functions ❌
 
-- **Object methods** ki tarah
-- Jab **apna `this`** chahiye ho
-- Function declarations ki jagah
+- As object methods
+- When the function needs its own `this`
+- As a replacement for every function declaration
 
 ---
 
 ## ⚠️ Common Mistakes
 
-1. **Parentheses rules bhoolna** — Zero ya multiple parameters ke liye parentheses **zaroori** hain.
-2. **Arrow functions ko methods ki tarah use karna** — Arrow functions `this` bind nahi karte.
-3. **Hoisting ki ummeed** — Arrow functions hoisted nahi hote, pehle define karna zaroori hai.
+1. **Forgetting the parentheses rules**: zero or multiple parameters require parentheses.
+2. **Using arrow functions as methods**: arrow functions do not bind their own `this`.
+3. **Expecting hoisting**: arrow functions are not available before their assignment.
 
 ---
 
@@ -391,13 +387,13 @@ Arrow function ko **object method** ki tarah use karna often **unexpected result
 | Feature | Function Expression | Arrow Function |
 |---|---|---|
 | Syntax | `const fn = function(a, b) { ... }` | `const fn = (a, b) => ...` |
-| `function` keyword | ✅ Use hota hai | ❌ Skip hota hai |
-| `return` keyword | Zaroori | Single statement mein skip |
-| Curly brackets | Zaroori | Single statement mein skip |
-| `this` | Apna `this` hota hai | Surrounding scope se inherit karta hai |
-| Object method | ✅ Theek hai | ❌ Problem deta hai |
-| Hoisting | ❌ Not hoisted | ❌ Not hoisted |
-| Use | Callbacks, event handlers | Short functions, array methods |
+| `function` keyword | ✅ Used | ❌ Skipped |
+| `return` keyword | Required when returning from a block | Can be skipped for one expression |
+| Curly brackets | Used for the function body | Can be skipped for one expression |
+| `this` | Has its own `this` | Inherits `this` from the surrounding scope |
+| Object method | ✅ Works normally | ❌ Often causes a `this` problem |
+| Hoisting | ❌ Not available before assignment | ❌ Not available before assignment |
+| Use | Callbacks and event handlers | Short functions and array methods |
 
 ---
 
@@ -411,7 +407,7 @@ const add = function(a, b) {
 };
 ```
 
-**→ Function ko variable mein store karta hai.**
+**→ Stores a function in a variable.**
 
 ### Arrow Function (Short Form)
 
@@ -419,9 +415,9 @@ const add = function(a, b) {
 const add = (a, b) => a + b;
 ```
 
-**→ Function expression ka short syntax.**
+**→ Short syntax for a function expression.**
 
-### Conversion Trick
+### Conversion Example
 
 ```js
 // Function Expression
@@ -431,14 +427,12 @@ const hello = function(name) { return "Hello " + name; };
 const hello = (name) => "Hello " + name;
 ```
 
----
-
 ## 🧠 Remember
 
 ```text
 Function Expression → Function stored in a variable
-Arrow Function     → Short syntax for function expression
-Declaration        → Hoisted (pehle call possible)
-Expression/Arrow   → Not hoisted (pehle define karo)
-Arrow + this       → Apna this nahi, parent se inherit
+Arrow Function     → Short syntax for a function expression
+Declaration        → Hoisted (can be called first)
+Expression/Arrow   → Not available before assignment
+Arrow + this       → No own this; it inherits from the parent scope
 ```
