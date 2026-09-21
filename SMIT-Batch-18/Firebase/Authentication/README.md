@@ -1,4 +1,4 @@
-# 📘 Firebase Authentication — Technical Documentation
+# 📘 Firebase Authentication
 
 This documentation provides an exact, detailed breakdown of the codebase in this folder, explaining its structure, individual files, core Firebase Authentication methods, and overall execution flow.
 

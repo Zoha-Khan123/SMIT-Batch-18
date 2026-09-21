@@ -1,4 +1,4 @@
-# 📘 Firebase Firestore — Technical Documentation
+# 📘 Firebase Firestore
 
 This documentation provides a comprehensive, code-backed technical breakdown of the Firebase Firestore implementation in this module, detailing the codebase structure, individual files, core database functions, and overall application data flow.
 

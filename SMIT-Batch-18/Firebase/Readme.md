@@ -1,4 +1,4 @@
-# 📘 Firebase — Introduction
+# 📘 Firebase Introduction
 
 A beginner-friendly guide to understanding Firebase, Backend-as-a-Service (BaaS), its core services, and its role in our Blog Application.
 
