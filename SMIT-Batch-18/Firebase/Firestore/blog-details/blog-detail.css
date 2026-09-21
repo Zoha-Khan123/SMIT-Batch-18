@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #111;
+}
+
+.detail_page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Blog Detail */
+
+.blog_detail {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
+}
+
+.blog_detail > h1:first-child {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.blog_detail h5 {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 15px;
+}
+
+.blog_detail h1 {
+    margin-bottom: 15px;
+}
+
+.blog_detail p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.blog_detail > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 25px 0;
+}
+
+/* Comments */
+
+.comments {
+    margin-top: 40px;
+}
+
+.comments > h1 {
+    margin-bottom: 20px;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #111;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.comments button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.comments button:hover {
+    background-color: #333;
+}
+
+/* User Comments */
+
+.user_comments {
+    margin-top: 30px;
+}
+
+.comment_1 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.comment_1 h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comment_1 p {
+    margin-bottom: 8px;
+    color: #555;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <!-- Include stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="create-blog.css">
+</head>
+
+<body>
+    
+    <nav>
+        <a href="/index.html"><- Back to Home</a>
+    </nav>
+
+    <div class="create_blog">
+
+
+        <h1 class="create_new_blog">Create New Blog</h1>
+
+        <form action="" id="blogForm">
+
+            <p>Blog Title:</p>
+            <input type="text" name="" id="blogTitle" placeholder="Enter blog title" required>
+
+            <p>Select Category</p>
+            <select name="" id="blogCategory" required>
+                <option value="" disabled selected>Select blog category</option>
+                <option value="travel">Travel</option>
+                <option value="healthy">Health</option>
+                <option value="food">Food</option>
+                <option value="technology">Technology</option>
+                <option value="fitness">Fitness</option>
+                <option value="education">Education</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+
+            <!-- Create the editor container -->
+            <p>Blog Content</p>
+            <div id="editor"></div>
+
+            <p>Blog Image</p>
+            <input type="file" name="" id="">
+
+            <button type="submit">Publish Blog</button>
+
+        </form>
+    </div>
+    <!-- Include the Quill library -->
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script type="module" src="create-blog.js"></script>
+</body>
+
+</html>

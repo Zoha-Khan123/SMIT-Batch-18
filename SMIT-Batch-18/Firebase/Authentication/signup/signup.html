@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MyBlogs</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="auth_container">
+
+        <div class="auth_box">
+
+            <h1>MyBlogs</h1>
+            <h2>Create Account</h2>
+            <p class="subtitle">Create your account to start writing blogs.</p>
+
+            <form id="signupForm" >
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <!-- <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required> -->
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+
+            <p class="switch_text">
+                Already have an account?
+                <a href="../login/login.html">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="signup.js"></script>
+
+</body>
+
+</html>

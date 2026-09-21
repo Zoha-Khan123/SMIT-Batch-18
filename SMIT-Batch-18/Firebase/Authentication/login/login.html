@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MyBlogs</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="auth_container">
+
+        <div class="auth_box">
+
+            <h1>MyBlogs</h1>
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to manage your blogs.</p>
+            
+            <form id="loginForm">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <button type="submit" >Login</button>
+
+            </form>
+
+            <p class="switch_text">
+                Don't have an account?
+                <a href="../signup/signup.html">Create Account</a>
+            </p>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="login.js" type="module"></script>
+
+</body>
+
+</html>
